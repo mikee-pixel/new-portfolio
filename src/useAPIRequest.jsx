@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 const useAPIRequestCarousel = (url) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [errorMessage, setErrorMessage] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(false);
 
     useEffect(() => {
         const fetchData = async() => {
@@ -20,12 +20,12 @@ const useAPIRequestCarousel = (url) => {
                 setData(result);
             } catch(error) {
                 //This block will be execute if the fetch request failed.
-                setErrorMessage(error);
+                setErrorMessage(true);
                 setLoading(false);
             } finally {
                 //This block will be executed until the fetch request complete.
-                setErrorMessage(false);
                 setLoading(false);
+                setErrorMessage(false);
             }
         }
 

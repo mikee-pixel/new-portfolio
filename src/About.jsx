@@ -8,6 +8,8 @@ const About = () => {
     //API Request to Skill Icons
     const {data, loading, errorMessage} = useAPIRequest("http://localhost:9000/skillIcons");
 
+    
+
     return (
         <section className="w-full flex justify-center about" id="about" ref={targetElement}> 
             <div className="inner-con max-w-[1320px] w-full px-10">
@@ -49,8 +51,9 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="carousel-skills-container overflow-hidden pt-10">
+                                {errorMessage && <p className="error-message">API Fetch Request Failed</p>}
+                                {loading && <div className="loader"></div>}
                                 <div className="carousel flex flex-row items-center gap-8">
-                                    {/* --- First Set --- */}
                                     {data && data.map(skillIcon => (
                                         <div className={`skill-item w-[30%] sm:w-[20%] flex-none justify-center items-center px-2`} key={skillIcon.id}>
                                             <img src={`${skillIcon.iconUrl}`} alt={`${skillIcon.name}`} />

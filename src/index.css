@@ -373,6 +373,10 @@ p {
   }
 }
 
+.error-message {
+  color: red;
+}
+
 
 
 /*NAVIGATION SECTION*/
@@ -780,10 +784,6 @@ p {
 /*Project Container*/
 .portfolio .previous-projects .projects-container {
   position: relative;
-}
-
-.portfolio .previous-projects .projects-container .error-message {
-  color: red;
 }
 
 /*Project Item*/
