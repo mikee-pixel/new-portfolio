@@ -21,7 +21,7 @@ const About = () => {
                     </div>
                     <div className={`col w-full sm:w-1/2 flex flex-col ${isElementVisible ? 'fadeRight' : 'not-activate-element'}`}>
                         <p className="intro gradient-highlighted">About Me</p>
-                        <h2><span className="highlight">Michael</span>, Website Developer</h2>
+                        <h2><span className="highlight">Michael</span>, Website Developer test</h2>
                         <h3>Based in Philippines</h3>
                         <p className="about-details">For six years, I've crafted dynamic websites, taking projects from concept to completion. I specialize in designing and developing user-friendly, responsive websites, leveraging the latest technologies and best practices. My expertise includes rigorous testing and debugging, server configuration and DNS management, SEO optimization, and website speed enhancement.</p>
                         <div className="expertise-container mt-5">
