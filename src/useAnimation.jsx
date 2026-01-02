@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef} from 'react';
 
-const useAnimation = (threshold = 0.5) => {
+const useAnimation = (threshold = 0.3) => {
     const targetElement = useRef(null);
     const [isElementVisible, setIsElementVisible] = useState(false);
 
