@@ -582,6 +582,12 @@ p {
   z-index: -1;
 } */
 
+@media screen and (max-width: 540px) {
+  .hero .position-typewriter {
+    height: 100px;
+  }
+}
+
 /*STATISTIC SECTION*/
 .statistic {
   background-color: var(--color-white);
