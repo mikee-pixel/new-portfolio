@@ -1,5 +1,7 @@
 import useAnimation from "./useAnimation";
 import useAPIRequest from "./useAPIRequest";
+import ErrorMessage from "./ErrorMessage";
+
 
 const About = () => {
     //Fade Animation
@@ -51,7 +53,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="carousel-skills-container overflow-hidden pt-10">
-                                {errorMessage && <p className="error-message">API Fetch Request Failed</p>}
+                                {errorMessage && <ErrorMessage/>}
                                 {loading && <div className="loader"></div>}
                                 <div className="carousel flex flex-row items-center gap-8">
                                     {data && data.map(skillIcon => (

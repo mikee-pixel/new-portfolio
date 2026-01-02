@@ -2,6 +2,7 @@ import {useState, useEffect, useRef } from "react";
 import useAPIRequest from "./useAPIRequest";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import ErrorMessage from "./ErrorMessage";
 
 const Portfolio = () => {
     const [projectFilter, setProjectFilter] = useState('filter-all');
@@ -69,11 +70,11 @@ const Portfolio = () => {
                             <button className={`tab ${projectFilter === 'filter-logo' ? "active" : " "} w-full sm:w-[200px]`} onClick={() => handleFilter("filter-logo")}>Logo Design</button>
                         </div>
                         <div className={`projects-container w-full flex flex-col sm:flex-row justify-center flex-wrap gap-5 py-10 ${isProjectVisible ? 'fadeUp' : 'not-activate-element'}`} ref={projectsContainer}>
-                            {errorMessage && <p className="error-message">API Fetch Request Failed</p>}
+                            {errorMessage && <ErrorMessage />}
                             {loading && <div className="loader"></div>}
                             { data && 
                                 data.filter(perProjectCat => perProjectCat.filterCategory.includes(projectFilter)).map(project => (
-                                        <div className={`project-item bg-white flex flex-col ${isProjectVisible ? 'fadeUp' : 'not-activate-element'} w-[100%] sm:w-[45%] md:w-[29%] h-350px`} key={project.id}>
+                                        <div className={`project-item bg-white flex flex-col ${isProjectVisible ? 'fadeUp' : 'not-activate-element'} w-[100%] sm:w-[45%] lg:w-[29%] h-350px`} key={project.id}>
                                             <div className="featured-image-container" style={{backgroundImage:`url(${project.featuredImage[0]})`}}>
                                             </div>
                                             <div className="project-details flex flex-row items-center w-full">
@@ -89,14 +90,15 @@ const Portfolio = () => {
                                             <div className="btn-container">
                                                 <button type="button" className="primary-btn" onClick={() => showPopupModal(project.id)} >View Details</button>
                                             </div>
+                                            <div className="btn-container-mobile" onClick={() => showPopupModal(project.id)}></div>
                                             <div className={`popup-modal flex justify-center items-center w-[100%] h-screen ${project.id === projectID ? 'active' : ""}`}>
                                                 <div className="inner-con w-[80%] h-[95vh] flex bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl">
-                                                    <div className="project-detailed-container flex flex-col md:flex-row bg-[#111826] text-white rounded-xl p-5 md:p-10 gap-10">
+                                                    <div className="project-detailed-container flex flex-col lg:flex-row bg-[#111826] text-white rounded-xl py-15 px-5 md:py-10 md:px-10 gap-10">
                                                         <div className="close-btn-container" onClick={() => closePopupModal(project.id)}>
                                                             <FontAwesomeIcon icon={faXmark} />
                                                         </div>
                                                         
-                                                        <div className="col project-full-dec w-full md:w-[45%] h-auto flex flex-col gap-2">
+                                                        <div className="col project-full-dec w-full lg:w-[45%] h-auto flex flex-col gap-2">
                                                             <p className="company-tag">Project/Company: {project.company}</p>
                                                             <h3 className="projectName">{project.websiteName}</h3>
                                                             <div className="project-desc-container">
@@ -117,7 +119,7 @@ const Portfolio = () => {
                                                             </div>
                                                         </div>
 
-                                                        <div className="col project-image w-full md:w-[60%]">
+                                                        <div className="col project-image w-full lg:w-[60%]">
                                                             {project.featuredImage.map((image, index) => (
                                                                 <img src={`${image}`} alt={`${project.websiteName}`} className="w-full h-auto" key={index}/>
                                                             ))}
