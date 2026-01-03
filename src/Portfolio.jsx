@@ -11,7 +11,7 @@ const Portfolio = () => {
     const [isProjectVisible, setIsProjectVisible] = useState(false); 
 
     //API Request to Projects 
-    const {data, loading, errorMessage} = useAPIRequest("http://localhost:8000/projects");
+    const {data, loading, errorMessage} = useAPIRequest("https://new-portfolio-projects-api.onrender.com/projects");
 
     //Update the filter value
     const handleFilter = (filterValue) => {
