@@ -12,6 +12,7 @@ const Portfolio = () => {
 
     //API Request to Projects 
     const {data, loading, errorMessage} = useAPIRequest("https://new-portfolio-projects-api.onrender.com/projects");
+    console.log(data);
 
     //Update the filter value
     const handleFilter = (filterValue) => {

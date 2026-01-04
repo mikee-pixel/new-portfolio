@@ -9,6 +9,7 @@ const About = () => {
 
     //API Request to Skill Icons
     const {data, loading, errorMessage} = useAPIRequest("https://new-portfolio-skillset-icons-api.onrender.com/skillIcons");
+    console.log(data);
 
     
 
