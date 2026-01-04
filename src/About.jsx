@@ -14,7 +14,8 @@ const About = () => {
     
 
     return (
-        <section className="w-full flex justify-center about" id="about" ref={targetElement}> 
+        // <section className="w-full flex justify-center about" id="about" ref={targetElement}> 
+        <section className="w-full flex justify-center about" id="about"> 
             <div className="inner-con max-w-[1320px] w-full px-10">
                 <div className="content-container w-full flex flex-col sm:flex-row justify-evenly items-center py-20 gap-10 sm:gap-0">
                     <div className={`col w-full sm:w-1/2 flex flex-col p-0 md:p-5 ${isElementVisible ? 'fadeLeft' : 'not-activate-element'}`}>
