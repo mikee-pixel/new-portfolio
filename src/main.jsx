@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Statistic from './Statistic.jsx'
+// import Statistic from './Statistic.jsx'
 import About from './About.jsx'
 import SkillSet from './SkillSet.jsx'
 import Resume from './Resume.jsx'
@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navigation />
     <App />
-    <Statistic />
+    {/* <Statistic /> */}
     <About />
     <SkillSet />
     <Resume />
