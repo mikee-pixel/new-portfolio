@@ -17,7 +17,7 @@ function App() {
           <div className="container-content flex flex-wrap items-center justify-evenly gap-10 sm:gap-0 py-5">
             <div className={`col basis-full sm:basis-1/2 flex flex-col items-start gap-y-1 ${isElementVisible ? `fadeLeft` : 'not-activate-element'}`}>
               <p className="intro gradient-highlighted">Hello I'm</p>
-              <h1 className="name">Michael Jhon Navidad Test</h1>
+              <h1 className="name">Michael Jhon Navidad</h1>
               <p className="position-typewriter gradient-highlighted">A <Typewriter /></p>
               
               <p className="tagline">I Build Websites That Don’t Just Look Good. They Work Smart.</p>
