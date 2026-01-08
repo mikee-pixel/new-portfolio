@@ -1,0 +1,215 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "featuredImage": ["/assets/nederwijnen-hero.png","/assets/neder-wijnen-laptop.jpg","/assets/neder-wijnen-mobile.jpg"],
+            "company": "Hilux",
+            "websiteName": "Neder Wijnen",
+            "url": "https://nederwijnen.nl/",
+            "description": ["Neder Wijnen is a Dutch wine wholesaler that connects high-quality vineyards with the hospitality and corporate sectors. They focus on delivering a curated selection of premium wines, acting as a trusted partner for businesses that value both quality and personalized service."],
+            "techStack": ["html", "css", "javascript", "php", "woocommerce", "b2c", "elementor"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 2,
+            "featuredImage": ["/assets/wijnkoperij-van-paesen-hero.png","/assets/van-paesen-laptop.jpg","/assets/mockup-for-mobile.png"],
+            "company": "Hilux",
+            "websiteName": "Van Paesen",
+            "url": "https://nieuw.nederwijnen.nl/",
+            "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+            "techStack": ["html", "css", "javascript", "woocommerce", "b2c", "elementor"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 3,
+            "featuredImage": ["/assets/lightspeed-maritime-communication-hero.png","/assets/lightspeed-maritime-communucation-laptop.jpg","/assets/lightspeed-maritime-communication-corporation-mobile.jpg"],
+            "company": "Upstream Teches",
+            "websiteName": "LightSpeed Maritime Communication Corporation",
+            "url": "https://lightspeed-maritime.com/",
+            "description": ["LightSpeed Maritime Communication Corp. is a specialist in the maritime sector, providing the essential high-speed connectivity that keeps vessels and crews linked to the world. They act as a vital lifeline for global trade, requiring a digital presence that matches their reputation for reliability and technical excellence."],
+            "techStack": ["html", "css", "javascript", "wordpress", "elementor"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 4,
+            "featuredImage": ["/assets/terralink-communications-corporation-hero.png","/assets/terralink-communication-corporation-laptop.jpg","/assets/terralink-communication-corporation-mobile.jpg"],
+            "company": "Upstream Teches",
+            "websiteName": "Terralink Communication Corporation",
+            "url": "https://terralink-communications.com/",
+            "description": ["Terralink Communication Corporation is a premier provider of satellite and terrestrial communication solutions, specializing in keeping businesses connected in even the most remote or challenging environments. They serve as a vital link for industries that require high-stakes connectivity, offering everything from satellite internet to complex network integration. For them, a digital presence isn't just about information—it’s about reflecting the reliability and technical excellence they provide to their clients every day."],
+            "techStack": ["html", "css", "javascript", "wordpress", "elementor"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 5,
+            "featuredImage": ["/assets/sbt-solutions-corporation-hero.png","/assets/sbt-solutions-corporation-laptop.jpg","/assets/sbt-solutions-corporation-mobile.jpg"],
+            "company": "Upstream Teches",
+            "websiteName": "SBT Solutions Corporation",
+            "url": "https://sbtsolutionscorp.com/",
+            "description": ["SBT Solutions Corporation is a dedicated technology partner that specializes in providing cutting-edge communication and infrastructure solutions. They focus on helping businesses navigate the complexities of modern technology, offering the expertise needed to integrate advanced tools into various industry workflows. By bridging the gap between innovation and practical application, they empower their clients to stay competitive and achieve their specific business goals."],
+            "techStack": ["html", "css", "javascript", "wordpress" , "elementor"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 6,
+            "featuredImage": ["/assets/triple-k-hero.png","/assets/triple-k-laptop.jpg","/assets/triple-k-mobile.jpg"],
+            "company": "Burk Digital",
+            "websiteName": "Triple K",
+            "url": "https://triplekconcrete.com/",
+            "description": ["Triple K Concrete is a family-owned contractor specializing in high-quality concrete solutions for a variety of construction needs. From sturdy foundations to decorative flatwork, they have built a strong reputation for delivering durable craftsmanship and reliable service. They focus on providing a hands-on, professional approach to every job, ensuring that both homeowners and businesses receive results that stand the test of time."],
+            "techStack": ["html", "css", "javascript", "wordpress", "elementor"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 7,
+            "featuredImage": ["/assets/BHWeaver-Electric.png","/assets/bh-weaver-electric-laptop.jpg","/assets/bh-weaver-electric-mobile.jpg"],
+            "company": "Burk Digital",
+            "websiteName": "BH Weaver Electric",
+            "url": "https://www.bhweaverelectric.com/",
+            "description": ["BH Weaver Electric is a trusted electrical contractor known for providing high-quality residential and commercial electrical services. With a focus on safety and precision, they have built a reputation for handling everything from complex installations to routine maintenance with expert craftsmanship. They take pride in their industry qualifications and their commitment to delivering reliable power solutions that meet the specific needs of their local community."],
+            "techStack": ["brizy", "html", "css"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 8,
+            "featuredImage": ["/assets/DemoBank-Secure-Banking-Application.png","/assets/banking-online-application-laptop.jpg","/assets/banking-online-application-mobile.jpg"],
+            "company": "Personal Project",
+            "websiteName": "Banking Online Application",
+            "url": "https://mikee-pixel.github.io/bank-app/",
+            "description": ["Demo Bank is a personal development project designed to simulate the core functionality and user experience of a modern digital banking platform. I deploy this on GitHub to explore the complexities of banking applications, focusing on how data flows between the user interface and the backend logic. The goal was to build a secure-feeling, intuitive environment that mimics the high-stakes world of online finance, allowing me to experiment with both design and advanced logic in a controlled setting."],
+            "techStack": ["html", "css", "javascript"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 9,
+            "featuredImage": ["/assets/goFLUENT-Amazon-Career-Choice.png","/assets/amazon-career-choice-laptop.jpg","/assets/amazon-career-choice-mobile.jpg"],
+            "company": "goFLUENT",
+            "websiteName": "Amazon Career Choice",
+            "url": "https://amazon.gofluent.com/",
+            "description": ["The Amazon Career Choice program is a global initiative that empowers employees through education and skill-building. A major focus is their language learning program, which offers localized training to help participants overcome communication barriers and advance their professional careers based on their specific location."],
+            "techStack": ["html", "css", "javascript", "wordpress", "divi"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 10,
+            "featuredImage": ["/assets/goFLUENT-Corporate-language.png","/assets/gofluent-corporate-website-laptop.jpg","/assets/gofluent-corporate-website-mobile.jpg"],
+            "company": "goFLUENT",
+            "websiteName": "goFluent Corporate Website",
+            "url": "https://www.gofluent.com/us-en/",
+            "description": ["goFLUENT is a global leader in B2B language training, dedicated to providing hyper-personalized solutions that help professionals communicate with confidence. By blending advanced technology with human interaction, they empower organizations to break down language barriers and foster a more inclusive, productive workforce. Headquartered in Switzerland and operating in over 100 countries, goFLUENT serves thousands of international corporations, helping millions of learners gain the language skills necessary for global business success."],
+            "techStack": ["html", "css", "javascript", "wordpress", "divi"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 11,
+            "featuredImage": ["/assets/goFLUENT-Amazon-ESL-Training.png","/assets/amazon-esl-laptop.jpg","/assets/amazon-esl-mobile.jpg"],
+            "company": "goFLUENT",
+            "websiteName": "Amazon ESL",
+            "url": "https://amazon-esl.gofluent.com/",
+            "description": ["Amazon ESL is a specialized language training initiative, powered by goFLUENT, designed specifically for Amazon employees. The program provides English as a Second Language (ESL) resources to help associates improve their communication skills, gain confidence in their roles, and unlock new career advancement opportunities. By offering flexible, job-relevant language training, the program serves as a bridge for a diverse workforce, fostering a more inclusive and growth-oriented work environment."],
+            "techStack": ["html", "css", "javascript", "wordpress", "divi"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 12,
+            "featuredImage": ["/assets/Engagement-goFLUENT.png","/assets/gofluent-engagement-website-laptop.jpg","/assets/gofluent-engagement-website-mobile.jpg"],
+            "company": "goFLUENT",
+            "websiteName": "GoFluent Engagement Website",
+            "url": "https://engagement.gofluent.com/en/",
+            "description": ["goFLUENT Engagement is a specialized digital ecosystem designed to maximize the impact of corporate language training. It serves as a strategic communication hub that focuses on driving learner participation and ensuring that organizations get the most value out of their educational investments. By providing targeted content and motivational resources, the platform helps global companies foster a culture of continuous learning, ensuring that employees remain engaged and consistent in developing their professional language skills."],
+            "techStack": ["html", "css", "javascript", "wordpress", "divi"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 13,
+            "featuredImage": ["/assets/SUNCUT-TOP.png","/assets/suncut-website-laptop.jpg","/assets/suncut-website-mobile.jpg"],
+            "company": "Datawords Philippines",
+            "websiteName": "Suncut Website",
+            "url": "https://suncut-uv.com/",
+            "description": ["Suncut is a premier Japanese skincare brand under the KOSÉ Cosmeport umbrella, specializing in high-performance UV protection. Renowned for its cutting-edge formulations, the brand offers a diverse range of sunscreens—from gels and essences to sprays—designed to withstand sweat, water, and sebum while remaining light and comfortable on the skin. Suncut is dedicated to providing complete protection for both the face and body, ensuring that users can enjoy the outdoors safely with products that cater to various lifestyles and skin types."],
+            "techStack": ["html", "css", "javascript", "php"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 14,
+            "featuredImage": ["/assets/mikee-pixel-github-io-ecommerce.png","/assets/ecommerce-website-laptop.jpg","/assets/ecommerce-website-mobile.jpg"],
+            "company": "Personal Project",
+            "websiteName": "Ecommerce Website",
+            "url": "https://mikee-pixel.github.io/ecommerce_wp_v4/",
+            "description": ["This project is a comprehensive personal exploration into the world of digital commerce, designed to simulate a high-performance WooCommerce storefront. Built as a sandbox for mastering the intricacies of online retail, it serves as a functional prototype that balances aesthetic appeal with complex backend logic. The goal was to create a realistic shopping environment that handles everything from product discovery to a seamless checkout process, reflecting the standards of a modern, professional e-commerce platform."],
+            "techStack": ["html", "css", "javascript", "woocommerce", "php"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 15,
+            "featuredImage": ["/assets/JILL-STUART-Beauty.png","/assets/jillstuart-website-laptop.jpg","/assets/jillstuart-website-mobile.jpg"],
+            "company": "Datawords Philippines",
+            "websiteName": "JillStuart Website",
+            "url": "https://www.jillstuart-beauty.com/en-jp/",
+            "description": ["JILL STUART Beauty is a world-renowned cosmetics brand that embodies the concept of 'Innocent & Sexy.' Founded by the New York-based designer Jill Stuart, the brand has become a cultural icon, particularly in Japan, for its ability to balance youthful freshness with a sophisticated, sensual allure. Every product is famously housed in opulent, jewelry-inspired packaging designed to bring a sense of joy and magic to daily beauty rituals. For JILL STUART, makeup is more than an aesthetic—it is a celebration of individuality and the pure happiness found in all things 'kawaii.'"],
+            "techStack": ["html", "css", "javascript", "php"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 16,
+            "featuredImage": ["/assets/Rowenta-Electrodomesticos.png","/assets/rowenta-website-laptop.jpg","/assets/rowenta-website-mobile.jpg"],
+            "company": "Datawords Philippines",
+            "websiteName": "Rowenta Website",
+            "url": "https://www.rowenta.es/",
+            "description": ["Rowenta is a globally recognized leader in home appliances, known for its dedication to German engineering and high-performance design. Since its inception, the brand has focused on creating innovative solutions for home care—ranging from powerful vacuum cleaners and garment steamers to advanced personal care products. Rowenta is defined by its commitment to eco-intelligence and technological precision, consistently delivering products that combine professional-grade results with sleek, modern aesthetics to simplify everyday living."],
+            "techStack": ["html", "css", "javascript", "php"],
+            "filterCategory": ["filter-web", "filter-all"]
+        },
+        {
+            "id": 17,
+            "featuredImage": ["/assets/poster-banner-v1.0.3.jpg"],
+            "company": "Legit Online Virtual Assistance",
+            "websiteName": "Poster Banner",
+            "url": "",
+            "description": ["This project is a creative advertisement design for a lifestyle footwear brand, developed as a personal exploration into high-impact product branding. The primary objective was to create a visually striking poster that captures the energy of a 'New Arrival' launch. By focusing on modern aesthetic trends and bold geometry, I aimed to demonstrate how digital art can be used to elevate a product’s perceived value and grab the attention of a fast-moving social media or retail audience."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-design", "filter-all"]
+        },
+        {
+            "id": 18,
+            "featuredImage": ["/assets/initial-layout.jpg"],
+            "company": "Samgyup Meats",
+            "websiteName": "Poster Banner",
+            "url": "",
+            "description": ["Samgyup Meats is a local food service provider specializing in authentic Korean BBQ experiences at home. They offer a curated selection of meats and traditional side dishes, such as kimchi and fresh lettuce, designed to bring the flavor of a restaurant grill to a family dinner table. The brand focuses on freshness and convenience, catering to customers who value high-quality ingredients and the communal joy of a shared meal."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-design", "filter-all"]
+        },
+        {
+            "id": 19,
+            "featuredImage": ["/assets/v1.0.6.jpg"],
+            "company": "Samgyup Meats",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["Samgyup Meats is a branding concept centered on the popular Korean BBQ (samgyupsal) experience. The brand identity is designed to evoke the warmth and communal spirit of traditional grilling, with a focus on high-quality meats and authentic flavors. I created this project as a specialized exercise in logo branding, aiming to develop a visual mark that is both appetizing and immediately recognizable within the competitive food industry."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-logo", "filter-all"]
+        },
+        {
+            "id": 20,
+            "featuredImage": ["/assets/LearnShareEST2021.jpg"],
+            "company": "Learn Share",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["The primary objective of this work was to enhance my technical skills in Photoshop by developing a timeless and authoritative visual identity. The logo features a bold, minimalist wordmark enclosed in a symmetric geometric frame, utilizing a high-contrast black-and-white palette to ensure versatility across various digital and print media. By incorporating 'EST. 2021' into the design, I aimed to ground the brand with a sense of stability and professional history."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-logo", "filter-all"]
+        },
+        {
+            "id": 21,
+            "featuredImage": ["/assets/wordofpixel.jpg"],
+            "company": "World of Pixel",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["World of Pixel is a personal branding project designed to represent a creative space where digital art and technical precision intersect. The brand identity is built around the concept of a vast, infinite 'digital universe,' focusing on the limitless possibilities of pixel-based design. I created this project as a dedicated exercise in brand storytelling, aiming to establish a visual mark that feels both expansive and meticulously crafted."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-log", "filter-all"]
+        }
+        
+    ]
+}
