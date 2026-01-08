@@ -30,7 +30,7 @@ function App() {
               
             </div>
             <div className={`col basis-full sm:basis-1/2 flex item-center ${isElementVisible ? 'fadeRight' : 'not-activate-element'}`}>
-              <img src="/assets/mikee-headshot-hero-v2.png" alt="profile picture with experience" />
+              <img src="/new-portfolio/assets/mikee-headshot-hero-v2.png" alt="profile picture with experience" />
             </div>
           </div>
          </div>
