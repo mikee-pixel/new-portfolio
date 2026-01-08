@@ -17,7 +17,7 @@ const About = () => {
             <div className="inner-con max-w-[1320px] w-full px-10">
                 <div className="content-container w-full flex flex-col sm:flex-row justify-evenly items-center py-20 gap-10 sm:gap-0">
                     <div className={`col w-full sm:w-1/2 flex flex-col p-0 md:p-5 ${isElementVisible ? 'fadeLeft' : 'not-activate-element'}`}>
-                        <img src="/assets/mikee-headshot-wearing-suit-v4.png" alt="michael navidad profile" />
+                        <img src="/new-portfolio/assets/mikee-headshot-wearing-suit-v4.png" alt="michael navidad profile" />
                     </div>
                     <div className={`col w-full sm:w-1/2 flex flex-col ${isElementVisible ? 'fadeRight' : 'not-activate-element'}`}>
                         <p className="intro gradient-highlighted">About Me</p>
@@ -29,25 +29,25 @@ const About = () => {
                             <div className="expertise-blurb grid grid-cols-1 sm:grid-cols-2 gap-8 pt-5">
                                 <div className="blurb-item flex flex-row items-center backdrop-light-item bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl">
                                     <div className="inner-con w-full flex flex-row items-center bg-[#111826] text-white rounded-xl p-3">
-                                        <div className="blurb-icon w-[17%]"><img src="/assets/coding-primary-color.png" alt="website development icon" /></div>
+                                        <div className="blurb-icon w-[17%]"><img src="/new-portfolio/assets/coding-primary-color.png" alt="website development icon" /></div>
                                         <p className="blurb-title w-[70%]">Website Design & Development</p>
                                     </div>
                                 </div>
                                 <div className="blurb-item flex flex-row items-center backdrop-light-item bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl">
                                     <div className="inner-con w-full flex flex-row items-center bg-[#111826] text-white rounded-xl p-3">
-                                        <div className="blurb-icon w-[17%]"><img src="/assets/ecommerce-primary-color.png" alt="e-commerce icon" /></div>
+                                        <div className="blurb-icon w-[17%]"><img src="/new-portfolio/assets/ecommerce-primary-color.png" alt="e-commerce icon" /></div>
                                         <p className="blurb-title w-[70%]">E-Commerce Website</p>
                                     </div>
                                 </div>
                                 <div className="blurb-item flex flex-row items-center backdrop-light-item bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl">
                                     <div className="inner-con w-full flex flex-row items-center bg-[#111826] text-white rounded-xl p-3">
-                                        <div className="blurb-icon w-[17%]"><img src="/assets/web-optimization-primary-color.png" alt="website optimization icon" /></div>
+                                        <div className="blurb-icon w-[17%]"><img src="/new-portfolio/assets/web-optimization-primary-color.png" alt="website optimization icon" /></div>
                                         <p className="blurb-title w-[70%]">Website Speed Optimization</p>
                                     </div>
                                 </div>
                                 <div className="blurb-item flex flex-row items-center backdrop-light-item bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl">
                                     <div className="inner-con w-full flex flex-row items-center bg-[#111826] text-white rounded-xl p-3">
-                                        <div className="blurb-icon w-[17%]"><img src="/assets/seo-primary-color.png" alt="seo icon" /></div>
+                                        <div className="blurb-icon w-[17%]"><img src="/new-portfolio/assets/seo-primary-color.png" alt="seo icon" /></div>
                                         <p className="blurb-title w-[70%]">Search Engine optimization</p>
                                     </div>
                                 </div>
