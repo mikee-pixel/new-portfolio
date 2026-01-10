@@ -191,6 +191,7 @@ p {
   background: var(--color-accent);
   z-index: 0;
   filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -212,6 +213,7 @@ p {
   background: var(--color-accent);
   z-index: 0;
   filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -905,6 +907,7 @@ p {
   left: 0;
   background-color: rgba(175, 183, 197, 0.5 );
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 999;
   scale: 0;
   transition: scale 0.5s ease-in-out;
