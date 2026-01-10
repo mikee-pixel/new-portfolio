@@ -8,7 +8,7 @@ const About = () => {
     const {targetElement, isElementVisible} = useAnimation();
 
     //API Request to Skill Icons
-    const {data, loading, errorMessage} = useAPIRequest("http://localhost:9000/skillIcons");
+    const {data, loading, errorMessage} = useAPIRequest("https://raw.githubusercontent.com/mikee-pixel/new-portfolio-skillset-icons-api/main/data/skillset-icon.json");
 
     
 
