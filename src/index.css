@@ -179,7 +179,7 @@ p {
 
 .backgroundcolor-gradient {
   background: radial-gradient(circle, #2eaf9d 0%, #4af8e4 100%);
-  box-shadow: var(--backshadow);
+  /* box-shadow: var(--backshadow); */
 }
 
 /*Backdrop light to element when hover*/
@@ -190,8 +190,8 @@ p {
   border-radius: 50%;
   background: var(--color-accent);
   z-index: 0;
-  filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  /* filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -212,8 +212,8 @@ p {
   border-radius: 50%;
   background: var(--color-accent);
   z-index: 0;
-  filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  /* filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -231,7 +231,7 @@ p {
 
 .separator-item.highlight {
   color: var(--color-accent);
-  box-shadow: var(--backshadow);
+  /* box-shadow: var(--backshadow); */
 }
 
 
@@ -481,7 +481,7 @@ p {
   background-color: var(--color-accent);
   padding: 7px 4px;
   border-radius: 50%;
-  box-shadow: 1px 1px 3px var(--color-white);
+  /* box-shadow: 1px 1px 3px var(--color-white); */
 
 }
 
@@ -681,7 +681,7 @@ p {
   display: block;
   border-radius: 10px;
   background: radial-gradient(circle, #2eaf9d 0%, #4af8e4 100%);
-  box-shadow: var(--backshadow);
+  /* box-shadow: var(--backshadow); */
 }
 
 /*RESUME SECTION*/
@@ -797,7 +797,7 @@ p {
   background-color: var(--color-accent);
   color: var(--color-white);
   font-weight: 500;
-  box-shadow: var(--backshadow);
+  /* box-shadow: var(--backshadow); */
 }
 
 /*Project Container*/
@@ -872,7 +872,7 @@ p {
 
 .portfolio .previous-projects .projects-container .project-item .btn-container:hover:before {
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: 10px;
+  /* backdrop-filter: 10px; */
 }
 
 .portfolio .previous-projects .projects-container .project-item .btn-container .primary-btn{
@@ -906,8 +906,8 @@ p {
   top: 0;
   left: 0;
   background-color: rgba(175, 183, 197, 0.5 );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
   z-index: 999;
   scale: 0;
   transition: scale 0.5s ease-in-out;
@@ -1063,7 +1063,7 @@ p {
     height: 230px;
     background-color: rgba(46, 175, 157, 1);
     border-radius: 100%;
-    filter: blur(20px);
+    /* filter: blur(20px); */
     position: absolute;
     bottom: -115px;
     left: -40px;
@@ -1076,7 +1076,7 @@ p {
     bottom: -150px;
     top: initial;
     left: -80px;
-    filter: blur(50px);
+    /* filter: blur(50px); */
     background-color: rgba(46, 175, 157, 0.5);
   }
 }
