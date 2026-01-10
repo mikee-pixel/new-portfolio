@@ -11,7 +11,7 @@ const Portfolio = () => {
     const [isProjectVisible, setIsProjectVisible] = useState(false); 
 
     //API Request to Projects 
-    const {data, loading, errorMessage} = useAPIRequest("http://localhost:8000/projects");
+    const {data, loading, errorMessage} = useAPIRequest("https://raw.githubusercontent.com/mikee-pixel/new-portfolio-projects-api/main/data/db.json");
     //Update the filter value
     const handleFilter = (filterValue) => {
         setProjectFilter(filterValue);
