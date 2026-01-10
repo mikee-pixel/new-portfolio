@@ -20,7 +20,7 @@ const Statistic = () => {
         setSatisfiedClient(satisfiedClient => counterIncrement(satisfiedClient, 7));
         setyearOfExperience(yearOfExperience => counterIncrement(yearOfExperience, 6));
 
-        // console.log("Interval function");
+        console.log("Interval function");
       }, 80)
     } else {
       clearInterval(intervalRef.current);
