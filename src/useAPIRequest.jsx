@@ -12,6 +12,7 @@ const useAPIRequestCarousel = (url) => {
         //Initiate fetch request
         const response = await fetch(url);
         //Check if fetch request is ok. If not then return a error message.
+        console.log(response);
         if (!response.ok) {
           throw new Error(`HTTP Error: Status ${response.status}`);
         }
