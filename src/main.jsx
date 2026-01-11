@@ -6,7 +6,7 @@ import Statistic from './Statistic.jsx'
 import About from './About.jsx'
 import SkillSet from './SkillSet.jsx'
 import Resume from './Resume.jsx'
-// import Portfolio from './Portfolio.jsx'
+import Portfolio from './Portfolio.jsx'
 import Contact from './Contact.jsx'
 import ContactDetails from './ContactDetails.jsx'
 import Footer from './Footer.jsx'
@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')).render(
     <About />
     <SkillSet />
     <Resume />
-    {/* <Portfolio /> */}
+    <Portfolio />
     <Contact />
     <ContactDetails />
     <Footer />
