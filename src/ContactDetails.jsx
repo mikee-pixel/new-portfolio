@@ -15,7 +15,7 @@ const ContactDetails = () => {
           </div>
           <div className="contacts-container w-full flex flex-col lg:flex-row justify-around items-center gap-5">
             <div className="blurb-item w-[100%] md:w-[70%] lg:w-[30%] flex flex-row items-center backdrop-light-item rounded-xl px-5 py-5">
-              <a href="tel:+639926414357" className="flex flex-row items-center">
+              <a href="https://maps.app.goo.gl/2k9oyuTY9ZdveiGD7" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center">
                 <div className="blurb-icon-container w-[15%]">
                     <FontAwesomeIcon icon={faLocationDot} />
                 </div>
