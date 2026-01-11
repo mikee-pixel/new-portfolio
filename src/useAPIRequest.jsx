@@ -1,57 +1,36 @@
 import { useState, useEffect } from "react";
 
-const MAX_JSON_SIZE = 300_000; // 300 KB iOS safe limit
-
 const useAPIRequestCarousel = (url) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
-    const controller = new AbortController();
-
     const fetchData = async () => {
-      setLoading(true);
       setErrorMessage(null);
-
       try {
-        const response = await fetch(url, {
-          signal: controller.signal,
-        });
+        //Initiate fetch request
+        const response = await fetch(url);
+        //Check if fetch request is ok. If not then return a error message.
 
         if (!response.ok) {
           throw new Error(`HTTP Error: Status ${response.status}`);
         }
-
-        const size = response.headers.get("content-length");
-
-        if (size && Number(size) > MAX_JSON_SIZE) {
-          controller.abort(); // stop download
-          throw new Error("JSON too large for iOS");
-        }
-
-        const text = await response.text();
-
-        if (text.length > MAX_JSON_SIZE) {
-          controller.abort();
-          throw new Error("JSON too large for iOS");
-        }
-
-        const result = JSON.parse(text);
+        //Convert the fetch data to JSON format.
+        const result = await response.json();
+        //Assign the fetch data to state.
         setData(result);
-
       } catch (error) {
-        if (error.name !== "AbortError") {
-          setErrorMessage(error.message || "Failed to load data");
-        }
+        //This block will be execute if the fetch request failed.
+        setErrorMessage(error);
+        setLoading(false);
       } finally {
+        //This block will be executed until the fetch request complete.
         setLoading(false);
       }
     };
 
-    fetchData();
-
-    return () => controller.abort();
+    fetchData(url);
   }, [url]);
 
   return { data, loading, errorMessage };
