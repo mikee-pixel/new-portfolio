@@ -11,13 +11,22 @@ const useAPIRequestCarousel = (url) => {
       try {
         //Initiate fetch request
         const response = await fetch(url);
-        //Check if fetch request is ok. If not then return a error message.
         console.log(response);
+        
+        //Check the size of the JSON response file size using header content-length
+        const responseSize = response.headers.get("content-length");
+       
+
+        //Check if fetch request is ok. If not then return a error message.
         if (!response.ok) {
           throw new Error(`HTTP Error: Status ${response.status}`);
+        } else if(responseSize && Number(responseSize) > 300_000) {
+          throw new Error("JSON too large for iOS");
         }
+
         //Convert the fetch data to JSON format.
         const result = await response.json();
+        
         //Assign the fetch data to state.
         setData(result);
       } catch (error) {
