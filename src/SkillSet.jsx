@@ -33,7 +33,6 @@ const SkillSet = () => {
                 setSkillReactJs(skillReactJs => counter(skillReactJs, 60));
                 setSkillTailwindCss(skillTailwindCss => counter(skillTailwindCss, 50));
                 
-                console.log('Skill Progression function is triggered');
             }, 10);
         } else {
             clearInterval(progressInterval.current);
@@ -44,7 +43,6 @@ const SkillSet = () => {
         const skillObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry =>{
                 if(entry.isIntersecting) {
-                    console.log('Skills component is in the viewport.');
                     skillProgression(true);
                 } else {
                     skillProgression(false);

@@ -20,7 +20,6 @@ const Statistic = () => {
         setSatisfiedClient(satisfiedClient => counterIncrement(satisfiedClient, 7));
         setyearOfExperience(yearOfExperience => counterIncrement(yearOfExperience, 6));
 
-        console.log("Interval function");
       }, 80)
     } else {
       clearInterval(intervalRef.current);
@@ -36,10 +35,8 @@ const Statistic = () => {
       entries.forEach(entry => {
         if(entry.isIntersecting) {
           elementVisible(true)
-          // console.log("Element is in the view port");
         } else {
           elementVisible(false);
-          // console.log("Element is NOT in the viewport");
         }
       })
     }, {
@@ -48,7 +45,7 @@ const Statistic = () => {
 
     observer.observe(targetRef.current);
 
-    //this function secure to terminate the observer once the React component unmount.
+    //This function secure to terminate the observer once the React component unmount.
     return () => {
       if(intervalRef.current) observer.unobserve(targetRef.current);
       observer.disconnect();

@@ -9,8 +9,8 @@ const About = () => {
 
     //API Request to Skill Icons
     const {data, loading, errorMessage} = useAPIRequest("https://raw.githubusercontent.com/mikee-pixel/new-portfolio-skillset-icons-api/main/data/skillset-icon.json");
-    console.log("About component rendered on the DOM");
-    console.log(data);
+    // console.log("About component rendered on the DOM");
+    // console.log(data);
     
 
     

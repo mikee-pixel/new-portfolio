@@ -5,15 +5,13 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import ErrorMessage from "./ErrorMessage";
 
 const Portfolio = () => {
-    const [projectFilter, setProjectFilter] = useState('filter-all');
-    const [projectID, setProjectID] = useState(null);
     const projectsContainer = useRef(null);
+    const [projectID, setProjectID] = useState(null);
+    const [projectFilter, setProjectFilter] = useState('filter-all');
     const [isProjectVisible, setIsProjectVisible] = useState(false); 
 
     //API Request to Projects 
     const {data, loading, errorMessage} = useAPIRequest("https://cdn.jsdelivr.net/gh/mikee-pixel/new-portfolio-projects-api@main/data/db.json");
-    console.log("Portfolio component rendered on the DOM");
-    console.log(data);
 
     //Update the filter value
     const handleFilter = (filterValue) => {
@@ -42,16 +40,39 @@ const Portfolio = () => {
 
     //Display Popup Modal Function
     const showPopupModal = (key) => {
-        // console.log(`Project ID: ${id}`);
-        // console.log(project.id)
-        const popUpObject = data.filter(project => project.id === key);
-        console.log(popUpObject);
+        // const popUpObject = data.filter(project => project.id === key);
         setProjectID(key);   
     }
 
+    //Close Popup Modal by Clicking X Icon
     const closePopupModal = () => {
         setProjectID(false);
     }
+
+    //Close Popup Modal Using Keydown ESC
+    const handleKeyPressEsc = (e) => {
+        if (e.key === "Escape") setProjectID(false);
+    }
+    useEffect(() => {
+        if(!projectID) return;
+
+        document.addEventListener("keydown", handleKeyPressEsc);
+        return () => removeEventListener("keypress", handleKeyPressEsc);
+    }, [projectID])
+
+    //Close Popup Modal By Clicking Outside The Modal Container
+    const clickOutsideModalContainer = (e) => {
+        const innerPopupModal = e.target.closest('.inner-popup-modal');
+        if(!innerPopupModal) setProjectID(false);
+        return; 
+    }
+    useEffect(() => {
+        if(!projectID) return;
+
+        document.addEventListener("pointerdown", clickOutsideModalContainer);
+
+        return () => removeEventListener("pointerdown", clickOutsideModalContainer);
+    }, [projectID])
 
     return(
         <section className="flex justify-center portfolio" id="portfolio">
@@ -94,7 +115,7 @@ const Portfolio = () => {
                                             </div>
                                             <div className="btn-container-mobile" onClick={() => showPopupModal(project.id)}></div>
                                             <div className={`popup-modal flex justify-center items-center w-[100%] h-screen ${project.id === projectID ? 'active' : ""}`}>
-                                                <div className="inner-con w-[80%] h-[95vh] flex bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl">
+                                                <div className={`inner-con inner-popup-modal w-[80%] h-[95vh] flex bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl project-inner-modal-${project.id}`}>
                                                     <div className="project-detailed-container flex flex-col lg:flex-row bg-[#111826] text-white rounded-xl py-15 px-5 md:py-10 md:px-10 gap-10">
                                                         <div className="close-btn-container" onClick={() => closePopupModal(project.id)}>
                                                             <FontAwesomeIcon icon={faXmark} />
