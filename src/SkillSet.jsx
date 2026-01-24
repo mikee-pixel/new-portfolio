@@ -28,10 +28,10 @@ const SkillSet = () => {
                 setSkillCss(skillCss => counter (skillCss, 90));
                 setSkillJavaScript(skillJavaScript => counter(skillJavaScript, 60));
                 setSkillWordPress(skillWordPress => counter(skillWordPress, 80));
-                setSkillPhp(skillPhp => counter(skillPhp, 70));
-                setSkillSql(skillSql => counter(skillSql, 50));
+                setSkillPhp(skillPhp => counter(skillPhp, 60));
+                setSkillSql(skillSql => counter(skillSql, 40));
                 setSkillReactJs(skillReactJs => counter(skillReactJs, 60));
-                setSkillTailwindCss(skillTailwindCss => counter(skillTailwindCss, 50));
+                setSkillTailwindCss(skillTailwindCss => counter(skillTailwindCss, 60));
                 
             }, 10);
         } else {
@@ -88,7 +88,7 @@ const SkillSet = () => {
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
                                 <div className="skill-name">php</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-percentage">60%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -99,7 +99,7 @@ const SkillSet = () => {
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
                                 <div className="skill-name">css</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-percentage">90%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -110,7 +110,7 @@ const SkillSet = () => {
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
                                 <div className="skill-name">sql</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-percentage">40%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -121,7 +121,7 @@ const SkillSet = () => {
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
                                 <div className="skill-name">javascript</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-percentage">60%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -132,7 +132,7 @@ const SkillSet = () => {
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
                                 <div className="skill-name">react js</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-percentage">60%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -154,7 +154,7 @@ const SkillSet = () => {
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
                                 <div className="skill-name">tailwind css</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-percentage">60%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
