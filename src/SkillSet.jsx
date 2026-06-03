@@ -76,8 +76,8 @@ const SkillSet = () => {
                     <div className="skills-container w-full flex flex-row flex-wrap justify-between items-start gap-5 mt-8" ref={skillTarget}>
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">html</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-name">react js</div>
+                                <div className="skill-percentage">60%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -87,8 +87,8 @@ const SkillSet = () => {
                         </div>
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">php</div>
-                                <div className="skill-percentage">60%</div>
+                                <div className="skill-name">express js</div>
+                                <div className="skill-percentage">40%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -98,23 +98,12 @@ const SkillSet = () => {
                         </div>
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">css</div>
-                                <div className="skill-percentage">90%</div>
+                                <div className="skill-name">tailwind css</div>
+                                <div className="skill-percentage">60%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
                                     <div className="skill-overlaybar" style={{width: `${skillCss}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">sql</div>
-                                <div className="skill-percentage">40%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillSql}%`}}></div>
                                 </div>
                             </div>
                         </div>
@@ -125,14 +114,25 @@ const SkillSet = () => {
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
+                                    <div className="skill-overlaybar" style={{width: `${skillSql}%`}}></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="skill-item w-full md:w-[45%]">
+                            <div className="details w-full flex flex-row items-center justify-between mb-2">
+                                <div className="skill-name">php</div>
+                                <div className="skill-percentage">60%</div>
+                            </div>
+                            <div className="skill-level">
+                                <div className="skill-bar">
                                     <div className="skill-overlaybar" style={{width: `${skillJavaScript}%`}}></div>
                                 </div>
                             </div>
                         </div>
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">react js</div>
-                                <div className="skill-percentage">60%</div>
+                                <div className="skill-name">html 5</div>
+                                <div className="skill-percentage">80%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -142,8 +142,8 @@ const SkillSet = () => {
                         </div>
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">wordpress</div>
-                                <div className="skill-percentage">80%</div>
+                                <div className="skill-name">css</div>
+                                <div className="skill-percentage">90%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">
@@ -153,8 +153,8 @@ const SkillSet = () => {
                         </div>
                         <div className="skill-item w-full md:w-[45%]">
                             <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">tailwind css</div>
-                                <div className="skill-percentage">60%</div>
+                                <div className="skill-name">wordpress</div>
+                                <div className="skill-percentage">80%</div>
                             </div>
                             <div className="skill-level">
                                 <div className="skill-bar">

@@ -48,11 +48,11 @@ const Resume = () => {
                                     <ul className="jobresponsibility-container">
                                         <li className="job-item">Managing the team workload using Agile Sprint, analyzing the project requirements, and ensuring the client requirements are met.</li>
                                         <li className="job-item">Manage different servers and domain registrar.</li>
-                                        <li className="job-item">Create custom functions and advance custom fields based on the project requirements.</li>
-                                        <li className="job-item">Maintain WordPress websites, plugins, and themes.</li>
-                                        <li className="job-item">Create and design webpages and dynamic website components.</li>
+                                        <li className="job-item">Create custom functions using (JS, JQuery, and PHP) and advance custom fields based on the project requirements.</li>
+                                        <li className="job-item">Setup API integration for WooCommerce shipping, payment gateway, and third-party CRM.</li>
+                                        <li className="job-item">Create and design webpages, custom page templates, and dynamic website components.</li>
                                         <li className="job-item">Optimize websites for performance, security, and scalability.</li>
-                                        <li className="job-item">Ensuring cross-platform optimization.</li>
+                                        <li className="job-item">Ensuring cross-platform optimization from Desktop, Tablet, to Mobile devices.</li>
                                     </ul>
                                 </div>
                             </div>
