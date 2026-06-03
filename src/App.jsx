@@ -25,7 +25,7 @@ function App() {
               <div className="social-medias-container">
                 <a href="tel:+639926414357" className="social-media-icon"><FontAwesomeIcon icon={faWhatsapp} /> </a>
                 <a href="https://www.linkedin.com/in/michael-jhon-navidad-03307a206/" target="_blank" className="social-media-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
-                <a href="tel:+639926414357" className="social-media-icon"><FontAwesomeIcon icon={faTelegram} /></a>
+                <a href="tel:+639926414357" className="social-media-icon"><FontAwesomeIcon icon={faTelegram}/></a>
               </div>
               
             </div>

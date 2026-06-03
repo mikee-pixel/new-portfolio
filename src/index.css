@@ -428,7 +428,7 @@ p {
 
 .navigation .menu-container.desktop .menu-item-container ul li {
   margin-top: 0;
-  transition: margin-top 0.5s ease-in-out;
+  transition: margin-top 0.1s ease-in-out;
 }
 
 .navigation .menu-container.desktop .menu-item-container ul li:hover {
@@ -556,6 +556,11 @@ p {
   .navigation .menu-container.mobile .call-me-bt {
     font-size: 1.4rem;
   }
+}
+
+/*SECTION SCROLL INTO VIEW*/
+section {
+  scroll-margin-top: 80px;
 }
 
 /*HERO SECTION */

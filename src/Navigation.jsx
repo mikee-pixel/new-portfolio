@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneFlip, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 const Navigation = () => {
     const targetHeader = useRef(null);
     const [isHeaderSticky, setIsHeaderSticky] = useState(false);
@@ -43,11 +44,11 @@ const Navigation = () => {
                         </div>
                         <div className="menu-item-container">
                             <ul className="flex flex-row items-center justify-center gap-6">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#skillset">Skills</a></li>
-                                <li><a href="#resume">Resume</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#contact-me">Contact</a></li>
+                                <li><Link to="#about">About</Link></li>
+                                <li><Link to="#skillset">Skills</Link></li>
+                                <li><Link to="#resume">Resume</Link></li>
+                                <li><Link to="#portfolio">Portfolio</Link></li>
+                                <li><Link to="#contact-me">Contact</Link></li>
                             </ul>
                         </div>
                         <div className="menu-btn-container flex flex-row items-center justify-center">
@@ -62,11 +63,11 @@ const Navigation = () => {
                                 <FontAwesomeIcon icon={faXmark} />
                             </div>
                             <ul className="flex flex-col items-start justify-center gap-6 pb-10">
-                                <li><a href="#about" onClick={() => hideMobileMenu()}>About</a></li>
-                                <li><a href="#skillset" onClick={() => hideMobileMenu()}>Skills</a></li>
-                                <li><a href="#resume" onClick={() => hideMobileMenu()}>Resume</a></li>
-                                <li><a href="#portfolio" onClick={() => hideMobileMenu()}>Portfolio</a></li>
-                                <li><a href="#contact-me" onClick={() => hideMobileMenu()}>Contact</a></li>
+                                <li><Link to="#about" onClick={() => hideMobileMenu()}>About</Link></li>
+                                <li><Link to="#skillset" onClick={() => hideMobileMenu()}>Skills</Link></li>
+                                <li><Link to="#resume" onClick={() => hideMobileMenu()}>Resume</Link></li>
+                                <li><Link to="#portfolio" onClick={() => hideMobileMenu()}>Portfolio</Link></li>
+                                <li><Link to="#contact-me" onClick={() => hideMobileMenu()}>Contact</Link></li>
                             </ul>
                             <a href="tel:+639926414357" className="primary-btn icon-rotate-animation call-me-bt w-full text-center">Call Me <span className="btn-icon"><FontAwesomeIcon icon={faPhoneFlip}/></span></a>
                         </div>
