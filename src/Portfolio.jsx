@@ -115,7 +115,7 @@ const Portfolio = () => {
                                             </div>
                                             <div className="btn-container-mobile" onClick={() => showPopupModal(project.id)}></div>
                                             <div className={`popup-modal flex justify-center items-center w-[100%] h-screen ${project.id === projectID ? 'active' : ""}`}>
-                                                <div className={`inner-con inner-popup-modal w-[80%] h-[95vh] flex bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl project-inner-modal-${project.id}`}>
+                                                <div className={`inner-con inner-popup-modal  w-[90%] md:w-[80%] h-[95vh] flex bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl project-inner-modal-${project.id}`}>
                                                     <div className="project-detailed-container flex flex-col lg:flex-row bg-[#111826] text-white rounded-xl py-15 px-5 md:py-10 md:px-10 gap-10">
                                                         <div className="close-btn-container" onClick={() => closePopupModal(project.id)}>
                                                             <FontAwesomeIcon icon={faXmark} />
