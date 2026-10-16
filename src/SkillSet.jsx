@@ -64,7 +64,7 @@ const SkillSet = () => {
 
     const {targetElement, isElementVisible} = useAnimation();
     return (
-        <section className="w-full flex justify-center skillset" id="skillset" ref={targetElement}>
+        <section className="w-full flex justify-center skillset bg-(--color-secondary-bg)" id="skillset" ref={targetElement}>
             <div className="inner-con max-w-[1320px] w-full px-10">
                 <div className="content-container py-20 flex flex-col items-center">
                     <h2 className={`${isElementVisible ? 'fadeUp' : 'not-activate-element'}`}>Skills</h2>

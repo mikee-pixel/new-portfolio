@@ -210,6 +210,63 @@
             "techStack": ["photoshop"],
             "filterCategory": ["filter-log", "filter-all"]
         }
+
+
+
+
+        ,
+        {
+            "id": 21,
+            "featuredImage": ["/assets/wordofpixel.jpg"],
+            "company": "Launch Point",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["World of Pixel is a personal branding project designed to represent a creative space where digital art and technical precision intersect. The brand identity is built around the concept of a vast, infinite 'digital universe,' focusing on the limitless possibilities of pixel-based design. I created this project as a dedicated exercise in brand storytelling, aiming to establish a visual mark that feels both expansive and meticulously crafted."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-log", "filter-all"]
+        },
+        {
+            "id": 21,
+            "featuredImage": ["/assets/wordofpixel.jpg"],
+            "company": "Oceanic Gateway Systems Corporation",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["World of Pixel is a personal branding project designed to represent a creative space where digital art and technical precision intersect. The brand identity is built around the concept of a vast, infinite 'digital universe,' focusing on the limitless possibilities of pixel-based design. I created this project as a dedicated exercise in brand storytelling, aiming to establish a visual mark that feels both expansive and meticulously crafted."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-log", "filter-all"]
+        }
+        ,
+        {
+            "id": 21,
+            "featuredImage": ["/assets/wordofpixel.jpg"],
+            "company": "Incantus Technology Solutions Corporation",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["World of Pixel is a personal branding project designed to represent a creative space where digital art and technical precision intersect. The brand identity is built around the concept of a vast, infinite 'digital universe,' focusing on the limitless possibilities of pixel-based design. I created this project as a dedicated exercise in brand storytelling, aiming to establish a visual mark that feels both expansive and meticulously crafted."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-log", "filter-all"]
+        },
+        {
+            "id": 21,
+            "featuredImage": ["/assets/wordofpixel.jpg"],
+            "company": "AMK Management Advisory and Services Corporation",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["World of Pixel is a personal branding project designed to represent a creative space where digital art and technical precision intersect. The brand identity is built around the concept of a vast, infinite 'digital universe,' focusing on the limitless possibilities of pixel-based design. I created this project as a dedicated exercise in brand storytelling, aiming to establish a visual mark that feels both expansive and meticulously crafted."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-log", "filter-all"]
+        },
+        {
+            "id": 21,
+            "featuredImage": ["/assets/wordofpixel.jpg"],
+            "company": "Satone Innovation Systems Corporation",
+            "websiteName": "Branding Logo",
+            "url": "",
+            "description": ["World of Pixel is a personal branding project designed to represent a creative space where digital art and technical precision intersect. The brand identity is built around the concept of a vast, infinite 'digital universe,' focusing on the limitless possibilities of pixel-based design. I created this project as a dedicated exercise in brand storytelling, aiming to establish a visual mark that feels both expansive and meticulously crafted."],
+            "techStack": ["photoshop"],
+            "filterCategory": ["filter-log", "filter-all"]
+        }
+        
         
     ]
 }

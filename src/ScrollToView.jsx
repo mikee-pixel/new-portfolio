@@ -7,7 +7,6 @@ const ScrollToView = () => {
     useEffect(() => {
         if(location.hash){
             const element = document.getElementById(`${location.hash.replace("#", "")}`);
-            console.log(element);
             element.scrollIntoView({
                 behavior: "smooth",
                 block: "start"

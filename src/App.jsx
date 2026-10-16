@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <section className="flex justify-center w-full hero" id="hero" ref={targetElement}>
-         <div className="inner-con max-w-[1320px] w-full justify-evenly px-10">
+         <div className="inner-con max-w-[1320px] w-full justify-evenly px-10 pb-20">
           <div className="container-content flex flex-wrap items-center justify-evenly gap-10 sm:gap-0 py-5">
             <div className={`col basis-full sm:basis-1/2 flex flex-col items-start gap-y-1 ${isElementVisible ? `fadeLeft` : 'not-activate-element'}`}>
               <p className="intro gradient-highlighted">Hello I'm</p>

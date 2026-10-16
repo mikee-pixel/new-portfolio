@@ -52,24 +52,22 @@ const Statistic = () => {
     }
   }, [])
   
-  
-  
 
   return (
     <section ref={targetRef} className={`flex flex-row justify-center w-full statistic ${targetRef ? 'fadeUp' : 'not-activate-element'}`}>
-      <div className="inner-con max-w-[1320px] w-full flex items-center justify-center px-10">
+      <div className="inner-con max-w-[1320px] w-full flex items-center justify-center px-10 border-y border-(--border-color)">
         <div className="container-content w-full flex flex-row flex-wrap items-center justify-around p-10 gap-10 sm:gap-0">
           <div className="counter-item flex flex-col items-center w-full sm:w-1/3">
-            <p className="counter-number">{successProject}+</p>
-            <p className="counter-data">Success Projects</p>
+            <h3 className="counter-number text-(--color-white)">{successProject}+</h3>
+            <p className="counter-data text-(--color-white)">Success Projects</p>
           </div>
           <div className="counter-item flex flex-col items-center w-full sm:w-1/3">
-            <p className="counter-number">{satisfiedClient}+</p>
-            <p className="counter-data">Satisfied Client</p>
+            <p className="counter-number text-(--color-white)">{satisfiedClient}+</p>
+            <p className="counter-data text-(--color-white)">Satisfied Client</p>
           </div>
           <div className="counter-item flex flex-col items-center w-full sm:w-1/3">
-            <p className="counter-number">{yearOfExperience}+</p>
-            <p className="counter-data">Years of Experience</p>
+            <p className="counter-number text-(--color-white)">{yearOfExperience}+</p>
+            <p className="counter-data text-(--color-white)">Years of Experience</p>
           </div>
         </div>
       </div>
