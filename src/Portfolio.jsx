@@ -257,8 +257,8 @@ const Portfolio = () => {
                 {/* Popup Modal Container  */}
                 {selectedProject && (
                     <div className={`popup-modal flex justify-center items-center w-[100%] h-screen ${projectID ? "active" : ""}`} >
-                        <div className={`inner-con inner-popup-modal  w-[90%] lg:[80%] h-[95vh] sm:h-[60vh] xl:h-[95vh] flex bg-gradient-to-br from-[#2eaf9d] via-[#2eaf9d] to-[#b0f7ef] p-[2px] rounded-xl project-inner-modal-${selectedProject.id}`} key={selectedProject.id}>
-                            <div className="project-detailed-container flex flex-col md:flex-row bg-[#111826] text-white rounded-xl py-15 px-5 md:py-10 md:px-10 gap-10 overflow-auto sm:overflow-visible">
+                        <div className={`inner-con inner-popup-modal  w-[90%] lg:[80%] h-[80vh] sm:h-[60vh] xl:h-[95vh] flex p-[2px] rounded-xl project-inner-modal-${selectedProject.id}`} key={selectedProject.id}>
+                            <div className="project-detailed-container flex flex-col md:flex-row bg-[#131D31] text-white rounded-xl border border-white/8 shadow-[0_40px_100px_-30px_rgba(0,0,0,0.75)] py-15 px-5 md:py-10 md:px-10 gap-10 overflow-auto sm:overflow-visible">
                                 {/*Close BTN */}
                                 <div className="close-btn-container" onClick={() => setProjectID(false)}>
                                     <X />
