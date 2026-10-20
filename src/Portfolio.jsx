@@ -139,86 +139,85 @@ const Portfolio = () => {
     <section className="flex justify-center portfolio" id="portfolio">
         <div className="inner-con max-w-[1320px] w-full px-10">
             <div className="content-container w-full flex flex-col items-center py-20">
-                <h2>Portfolio</h2>
+                <h2 className="text-(--color-white)">Portfolio</h2>
                     <div className="separator w-25 flex flex-row items-center py-5">
                         <hr className="separator-item w-8" />
                         <hr className="separator-item w-10 border-[3px] highlight" />
                         <hr className="separator-item w-8" />
                     </div>
-                <p className="text-desc">Here are my previous works.</p>
-                <div className="previous-projects py-10 flex flex-col items-center w-full">
-                    <div className="tabs-container flex flex-row flex-wrap justify-center gap-10 sm:gap-10 px-0 sm:px-10">
-                        <button className={`tab ${projectFilter === "filter-all" ? "active" : ""} flex flex-row items-center justify-between gap-3 w-full sm:w-auto`} onClick={() => handleFilter("filter-all")}>
+                <p className="text-desc text-(--text-muted) text-center">Websites and online stores I've built for growing businesses.</p>
+                <div className="previous-projects py-10 flex flex-col items-center">
+                    <div className="tabs-container flex flex-row max-[850px]:flex-wrap flex-nowrap justify-center w-fit gap-10 md:gap-3 xl:gap-10 max-[850px]:px-[10px] max-[850px]:py-[10px] px-[7px] py-[7px] bg-(--color-tertiary-bg) max-[850px]:rounded-[35px] rounded-[50px]">
+                        <button className={`tab ${projectFilter === "filter-all" ? "active" : ""} flex flex-row items-center justify-between gap-3 max-[850px]:w-full w-auto`} onClick={() => handleFilter("filter-all")}>
                             <div className="tab-content-container flex flex-row items-center gap-5">
                                 <div className="tab-icon-left-container">
                                     <Blocks className="sm:h-[30px] sm:w-[30px]"/> 
                                 </div>
                                 <div className="tab-labels flex flex-col text-left">
                                     <div className="tab-title">All</div>
-                                    <p className="tab-descripton block sm:hidden">View all projects.</p>
+                                    <p className="tab-descripton max-[850px]:block hidden">View all projects.</p>
                                 </div>
                             </div>
-                            <div className="tab-icon-container  block sm:hidden">
+                            <div className="tab-icon-container  max-[850px]:block hidden">
                                 <ArrowRight />
                             </div>
                         </button>
-                        <button className={`tab ${projectFilter === "filter-web" ? "active" : " "} flex flex-row items-center justify-between gap-3 w-full sm:w-auto`} onClick={() => handleFilter("filter-web")}>
+                        <button className={`tab ${projectFilter === "filter-web" ? "active" : " "} flex flex-row items-center justify-between gap-3 max-[850px]:w-full w-auto`} onClick={() => handleFilter("filter-web")}>
                             <div className="tab-content-container flex flex-row items-center gap-5">
                                 <div className="tab-icon-left-container">
                                     <Monitor className="sm:h-[30px] sm:w-[30px]"/> 
                                 </div>
                                 <div className="tab-labels flex flex-col text-left">
                                     <div className="tab-title">Web Development</div>
-                                    <p className="tab-descripton block sm:hidden">Custom websites & web applications.</p>
+                                    <p className="tab-descripton max-[850px]:block hidden">Custom websites & web applications.</p>
                                 </div>
                             </div>
-                            <div className="tab-icon-container  block sm:hidden">
+                            <div className="tab-icon-container  max-[850px]:block hidden">
                                 <ArrowRight />
                             </div>
                         </button>
-                        <button className={`tab ${projectFilter === "filter-ecommerce" ? "active" : ""} flex flex-row items-center justify-between gap-3 w-full sm:w-auto`} onClick={() => handleFilter("filter-ecommerce")}>
+                        <button className={`tab ${projectFilter === "filter-ecommerce" ? "active" : ""} flex flex-row items-center justify-between gap-3 max-[850px]:w-full w-auto`} onClick={() => handleFilter("filter-ecommerce")}>
                             <div className="tab-content-container flex flex-row items-center gap-5">
                                 <div className="tab-icon-left-container">
                                     <ShoppingCart className="sm:h-[30px] sm:w-[30px]"/> 
                                 </div>
                                 <div className="tab-labels flex flex-col text-left">
                                     <div className="tab-title">E-Commerce</div>
-                                    <p className="tab-descripton block sm:hidden">Online stores & digital solutions.</p>
+                                    <p className="tab-descripton max-[850px]:block hidden">Online stores & digital solutions.</p>
                                 </div>
                             </div>
-                            <div className="tab-icon-container  block sm:hidden">
+                            <div className="tab-icon-container max-[850px]:block hidden">
                                 <ArrowRight />
                             </div>
                         </button>
-                        <button className={`tab ${projectFilter === "filter-logo" ? "active" : " "} flex flex-row items-center justify-between gap-3 w-full sm:w-auto`} onClick={() => handleFilter("filter-logo")}>
+                        <button className={`tab ${projectFilter === "filter-logo" ? "active" : " "} flex flex-row items-center justify-between gap-3 max-[850px]:w-full w-auto`} onClick={() => handleFilter("filter-logo")}>
                             <div className="tab-content-container flex flex-row items-center gap-5">
                                     <div className="tab-icon-left-container">
                                         <Search className="sm:h-[30px] sm:w-[30px]"/> 
                                     </div>
                                     <div className="tab-labels flex flex-col text-left">
                                         <div className="tab-title">SEO</div>
-                                        <p className="tab-descripton block sm:hidden">Increase visibility & drive traffic.</p>
+                                        <p className="tab-descripton max-[850px]:block hidden">Increase visibility & drive traffic.</p>
                                     </div>
                                 </div>
-                                <div className="tab-icon-container  block sm:hidden">
+                                <div className="tab-icon-container  max-[850px]:block hidden">
                                     <ArrowRight />
                                 </div>
                         </button>
-                        <button className={`tab ${projectFilter === "filter-design" ? "active" : " "} flex flex-row items-center justify-between gap-3 w-full sm:w-auto`} onClick={() => handleFilter("filter-design")}>
+                        <button className={`tab ${projectFilter === "filter-design" ? "active" : " "} flex flex-row items-center justify-between gap-3 max-[850px]:w-full w-auto`} onClick={() => handleFilter("filter-design")}>
                             <div className="tab-content-container flex flex-row items-center gap-5">
                                 <div className="tab-icon-left-container">
                                     <PenTool className="sm:h-[30px] sm:w-[30px]"/> 
                                 </div>
                                 <div className="tab-labels flex flex-col text-left">
                                     <div className="tab-title">Graphics Design</div>
-                                    <p className="tab-descripton block sm:hidden">Creative design & branding.</p>
+                                    <p className="tab-descripton max-[850px]:block hidden">Creative design & branding.</p>
                                 </div>
                             </div>
-                            <div className="tab-icon-container  block sm:hidden">
+                            <div className="tab-icon-container  max-[850px]:block hidden">
                                 <ArrowRight />
                             </div>
-                        </button>
-                        
+                        </button>    
                     </div>
                 <div className={`projects-container w-full flex flex-col sm:flex-row justify-center flex-wrap gap-5 py-10 ${isProjectVisible ? "fadeUp" : "not-activate-element"}`} ref={projectsContainer}>
                     {/* Portfolio Grid */}

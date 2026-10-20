@@ -812,13 +812,13 @@ section {
 
 
 /*PORTFOLIO SECTION*/
-.portfolio h2 {
+/* .portfolio h2 {
   color: var(--color-white);
 }
 
 .portfolio .text-desc {
   color: var(--color-white);
-}
+} */
 
 .portfolio .previous-projects {
   position: relative;
@@ -830,31 +830,36 @@ section {
 /*Tabs Container*/
 .portfolio .previous-projects .tabs-container .tab {
   padding: 10px 20px;
-  background-color: var(--color-white);
-  color: var(--color-accent);
-  border-radius: 10px;
-  transform: translateY(0);
-  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  color: var(--text-muted);
+  border-radius: 50px;
+  font-weight: 600;
 }
 
 .portfolio .previous-projects .tabs-container .tab:hover {
-  transform: translateY(-10px);
-  background-color: var(--color-accent);
   color: var(--color-white);
-  font-weight: 500;
   cursor: pointer;
 }
 
 .portfolio .previous-projects .tabs-container .tab.active {
-  transform: translateY(-10px);
-  background-color: var(--color-accent);
+  background-color: rgba(46, 175, 157, 0.16);
   color: var(--color-white);
   font-weight: 500;
-  box-shadow: var(--backshadow);
+  border: 1px solid rgba(74, 248, 228, 0.45);
 }
 
 .portfolio .previous-projects .tabs-container .tab.active .tab-icon-left-container {
   position: relative;
+}
+
+.portfolio .previous-projects .tabs-container .tab.active .tab-icon-left-container svg{
+  stroke: var(--color-hover);
+  position: relative;
+}
+
+@media screen and (max-width: 850px) {
+  .portfolio .previous-projects .tabs-container .tab {
+    border-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -865,16 +870,10 @@ section {
     height: 45px;
     top: 0;
     left: 0;
-    background-color: var(--color-white);
+    background-color: rgba(46, 175, 157, 0.14);
     border-radius: 10px;
     margin-top: -11px;
     margin-left: -11px;
-
-  }
-
-  .portfolio .previous-projects .tabs-container .tab.active .tab-icon-left-container svg{
-    stroke: var(--color-accent);
-    position: relative;
   }
 
   .portfolio .previous-projects .tabs-container .tab .tab-labels .tab-title {
