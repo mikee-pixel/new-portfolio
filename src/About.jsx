@@ -15,7 +15,6 @@ const About = () => {
 
     //TechStack Data
     const techStack = Object.values(TechStack);
-    console.log(techStack);
     
     //Embla Carousel
     const [emblaRef] = useEmblaCarousel(

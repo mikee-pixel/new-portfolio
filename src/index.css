@@ -462,8 +462,10 @@ p {
   margin-top: -5px;
 }
 
+
 /*Mobile*/
-.navigation .menu-container.mobile {
+
+/* .navigation .menu-container.mobile {
   position: fixed;
   top: 0;
   right: -150%;
@@ -479,7 +481,40 @@ p {
   display: flex;
   animation: slideLeft 1s ease-in-out;
   right: 0%;
+} */
+
+.navigation .menu-container.mobile {
+  position: fixed;
+  top: 0;
+  right: -150%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(6, 10, 20, .5);
+  backdrop-filter: blur(20px);
+  z-index: 999;
+  padding: 2rem 5rem;
 }
+
+.navigation .menu-container.mobile.active {
+  display: flex;
+  right: 0%;
+}
+
+.navigation .menu-container.mobile .mobile-slideout__container {
+  position: absolute;
+  top: 0;
+  right: -150%;
+  background-color: #131D31;
+  height: 100vh;
+  width: 85vw;
+  transition: right 0.5s ease-in;
+}
+
+
+.navigation .menu-container.mobile.active .mobile-slideout__container {
+  right: 0%;
+}
+
 
 .navigation .menu-container.mobile .close-btn-container {
   position: absolute;
@@ -501,13 +536,24 @@ p {
   
 }
 
-.navigation .menu-container.mobile ul li a {
+.navigation .menu-container.mobile .mobile-slideout__container .mobile-menu-list__container ul li .menu-item__icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-6px, -7px);
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--text-subtle);
+  border-radius: 100%;
+}
+/* .navigation .menu-container.mobile ul li a {
   font-size: 1.8rem;
   color: var(--color-accent);
   letter-spacing: 3px;
   margin-top: 0px;
   transition: color 1s ease-in-out, margin-top 1s ease-in-out;
-}
+} */
 
 .navigation .menu-container .menu-btn-container .burger-menu-container {
   display: none;
@@ -536,7 +582,6 @@ p {
   fill: var(--color-white);
 }
 
-
 @media screen and (max-width: 1024px) {
   .navigation .menu-container.desktop .menu-item-container {
     display: none;
@@ -548,7 +593,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .navigation .menu-container.mobile {
-    width: 80vw;
+    /* width: 80vw; */
   }
 }
 
@@ -563,9 +608,9 @@ p {
   .navigation .menu-container.mobile {
         padding: 2rem 3rem;
   }
-  .navigation .menu-container.mobile ul li a {
+  /* .navigation .menu-container.mobile ul li a {
     font-size: 1.4rem;
-  }
+  } */
 
   .navigation .menu-container.mobile .call-me-bt {
     font-size: 1.4rem;
