@@ -66,33 +66,35 @@ const Navigation = () => {
                         </div>
                     </div>
                     <div className={`menu-container mobile flex flex-col items-start justify-center ${isMobileMenuActive ? "active" : "not-active"}`}>
-                            <div className="mobile-slideout__container p-10 flex flex-col gap-8">
+                            <div className="mobile-slideout__container p-10 flex flex-col gap-5 overflow-y-auto">
                                 <div className="close-btn-container" onClick={() => hideMobileMenu()}>
                                     <FontAwesomeIcon icon={faXmark} />
                                 </div>
-                                <div className="mobile--menu-header !text-(--color-white) !text-[30px] !font-[800]">
+                                <div className="mobile--menu-header !text-(--color-white) !text-[25px] !font-[800] !font-(family-name:--heading-style)">
                                     Michael<span className="text-(--color-accent)">Jhon</span>
                                 </div>
 
                                 <div className="status-container flex flex-row items-center gap-2 border-[1px] border-(--color-accent)/50 p-1 rounded-[50px] bg-(--color-accent)/14 text-(--color-white) font-[600]">
                                     <Dot className="w-[30px] h-[30px] stroke-(--color-hover)"/>
-                                    <p>Available for new projects</p>
+                                    <p className="!text-[14px]">Available for new projects</p>
                                 </div>
                                 <div className="mobile-menu-list__container flex flex-col gap-3">
                                     <p className="uppercase text-(--small-label) text-(--text-subtle) !text-[18px]">Menu</p>
-                                    <ul className="flex flex-col items-start justify-center gap-6 pb-10">
+                                    <ul className="flex flex-col items-start justify-center gap-4 pb-10">
                                         {primaryMenuList.map((menuItemList, index) => (
-                                            <li className="flex flex-row justify-between items-center w-full" key={index}>
+                                            <li className="w-full">
+                                                <Link to={`${menuItemList.link}`} className="flex flex-row justify-between items-center w-full" onClick={() => hideMobileMenu()}>
                                                 <div className="menu-item__content flex flex-row gap-3 w-[85%]">
-                                                    <p className="menu-num text-[20px] text-(--color-hover) mt-[10px]">{String(index + 1).padStart(2, "0")}</p>
+                                                    <p className="menu-num text-[20px] text-(--color-hover) mt-[5px]">{String(index + 1).padStart(2, "0")}</p>
                                                     <div className="menu-item__details flex flex-col gap-0">
-                                                        <span className="!text-(--color-white) text-[35px] font-(--heading-style)">{menuItemList.label}</span>
-                                                        <p className="text-(--text-subtle)">Who I am and what I do</p>
+                                                        <span className="!text-(--color-white) text-[25px] font-(family-name:--heading-style)">{menuItemList.label}</span>
+                                                        <p className="text-(--text-subtle)">{menuItemList.description}</p>
                                                     </div> 
                                                 </div>
                                                 <div className="menu-item__icon w-[10%] flex flex-row justify-center items-center relative">
                                                     <ArrowUpRight className="stroke-(--text-subtle) relative"/>
                                                 </div>
+                                                </Link>
                                             </li>
                                         ))}
                                         
