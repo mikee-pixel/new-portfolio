@@ -984,7 +984,8 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(6, 10, 20, .90);
+  background-color: rgba(6, 10, 20, .5);
+  backdrop-filter: blur(20px);
   z-index: 999;
   scale: 0;
   transition: scale 0.5s ease-in-out;
