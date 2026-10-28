@@ -12,6 +12,7 @@ const Resume = () => {
     const {targetElement: work2Ref, isElementVisible: work2Visible} = useAnimation();
     const {targetElement: work3Ref, isElementVisible: work3Visible} = useAnimation();
     const {targetElement: work4Ref, isElementVisible: work4Visible} = useAnimation();
+    const {targetElement: work5Ref, isElementVisible: work5Visible} = useAnimation();
 
 
 
@@ -40,6 +41,7 @@ const Resume = () => {
                         </div>
                         <div className="col work-history w-full sm:w-[48%]">
                             <h3 className={`title mb-5 ${resumeTitleVisible ? 'fadeUp' : 'not-activate-element'}`} ref={resumeTitleRef}>Professional Experience</h3>
+
                             <div className={`work-item history-item ${work1Visible ? 'fadeUp' : 'not-activate-element'}`} ref={work1Ref}>
                                 <div className="inner-con">
                                     <h4>Manager / Senior Website Developer</h4>
@@ -59,6 +61,23 @@ const Resume = () => {
 
                             <div className={`work-item history-item ${work2Visible ? 'fadeUp' : 'not-activate-element'}`} ref={work2Ref}>
                                 <div className="inner-con">
+                                    <h4>React JS Developer</h4>
+                                    <p className="year backgroundcolor-gradient">July 2026 – October 2026</p>
+                                    <h5><i>Upstream Teches</i></h5>
+                                    <ul className="jobresponsibility-container">
+                                        <li className="job-item">Built a library of reusable React components and page templates, which speed up development and kept the design consistent across the site.</li>
+                                        <li className="job-item">Integrated RESTful APIs with an Express JS backend so content and data stayed dynamic and up to date.</li>
+                                        <li className="job-item">Set up client-side routing with React Router for fast, smooth navigation between pages without full reloads.</li>
+                                        <li className="job-item">Delivered a fully responsive layout with Tailwind CSS, optimized for desktop, tablet, and mobile.</li>
+                                        <li className="job-item">Debugged and resolved UI, API, and performance issues to keep the site stable, fast, and reliable.</li>
+                                        <li className="job-item">Wrote modular, maintainable code that makes future updates and new features easy to add.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div className={`work-item history-item ${work3Visible ? 'fadeUp' : 'not-activate-element'}`} ref={work3Ref}>
+                                <div className="inner-con">
                                     <h4>Digital Marketing Developer</h4>
                                     <p className="year backgroundcolor-gradient">Nov 2021 - Aug 2023</p>
                                     <h5><i>GoFluent Philippines, Inc.</i></h5>
@@ -74,7 +93,7 @@ const Resume = () => {
                                 </div>
                             </div>
 
-                            <div className={`work-item history-item ${work3Visible ? 'fadeUp':'not-activate-element'}`} ref={work3Ref}>
+                            <div className={`work-item history-item ${work4Visible ? 'fadeUp':'not-activate-element'}`} ref={work4Ref}>
                                 <div className="inner-con">
                                     <h4>Website QA</h4>
                                     <p className="year backgroundcolor-gradient">March 2021 - Nov 2021</p>
@@ -89,7 +108,7 @@ const Resume = () => {
                                 </div>
                             </div>
 
-                            <div className={`work-item history-item ${work4Visible ? 'fadeUp' : 'not-activate-element'}`} ref={work4Ref}>
+                            <div className={`work-item history-item ${work5Visible ? 'fadeUp' : 'not-activate-element'}`} ref={work5Ref}>
                                 <div className="inner-con">
                                     <h4>Digital Specialist</h4>
                                     <p className="year backgroundcolor-gradient">Aug 2019 - January 2021</p>
