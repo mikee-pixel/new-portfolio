@@ -1,15 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-// import useAPIRequest from "./useAPIRequest";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faXmark,
-  faLink,
-  faCalendar,
-  faLayerGroup,
-  faTag,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
-import ErrorMessage from "./ErrorMessage";
+import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import PortfolioData from "./data/PortfolioData";
 import {
   Calendar,
@@ -20,7 +11,6 @@ import {
   Blocks,
   Monitor,
   PenTool,
-  SplinePointer,
   ArrowRight,
   ShoppingCart,
   Search,

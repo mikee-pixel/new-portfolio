@@ -9,7 +9,7 @@ const Navigation = () => {
 
     //Primary Menu List Data
     const primaryMenuList = Object.values(PrimaryMenuList);
-    console.log(primaryMenuList);
+
     const targetHeader = useRef(null);
     const [isHeaderSticky, setIsHeaderSticky] = useState(false);
     const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
@@ -33,7 +33,6 @@ const Navigation = () => {
     }, [])
 
     const showMobileMenu = () => {
-        console.log("Mobile menu trigger");
         setIsMobileMenuActive(true);
     }
 
@@ -82,7 +81,7 @@ const Navigation = () => {
                                     <p className="uppercase text-(--small-label) text-(--text-subtle) !text-[18px]">Menu</p>
                                     <ul className="flex flex-col items-start justify-center gap-4 pb-10">
                                         {primaryMenuList.map((menuItemList, index) => (
-                                            <li className="w-full">
+                                            <li className="w-full" key={index}>
                                                 <Link to={`${menuItemList.link}`} className="flex flex-row justify-between items-center w-full" onClick={() => hideMobileMenu()}>
                                                 <div className="menu-item__content flex flex-row gap-3 w-[85%]">
                                                     <p className="menu-num text-[20px] text-(--color-hover) mt-[5px]">{String(index + 1).padStart(2, "0")}</p>
@@ -97,13 +96,6 @@ const Navigation = () => {
                                                 </Link>
                                             </li>
                                         ))}
-                                        
-                    
-                                        {/* <li><Link to="#about" onClick={() => hideMobileMenu()}>About</Link></li>
-                                        <li><Link to="#skillset" onClick={() => hideMobileMenu()}>Skills</Link></li>
-                                        <li><Link to="#resume" onClick={() => hideMobileMenu()}>Resume</Link></li>
-                                        <li><Link to="#portfolio" onClick={() => hideMobileMenu()}>Portfolio</Link></li>
-                                        <li><Link to="#contact-me" onClick={() => hideMobileMenu()}>Contact</Link></li> */}
                                     </ul>
                                 </div>
                                 

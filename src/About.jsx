@@ -79,8 +79,8 @@ const About = () => {
                                         {/* Embla Carousel 1 */}
                                         <div className="embla__viewport" ref={emblaRef}>
                                             <div className="embla__container">
-                                                {techStack && techStack.map(techStackItem => (
-                                                    <div className="embla__slide pl-[10px]">
+                                                {techStack && techStack.map((techStackItem, index) => (
+                                                    <div className="embla__slide pl-[10px]" key={index}>
                                                         <div className="slide-content__wrapper flex flex-row items-center gap-3 bg-(--color-tertiary-bg) rounded-[30px] p-[10px] border-[1px] border-(--border-color-light)">
                                                             <div className={`tech-acrony flex justify-center items-center rounded-[100%]`} style={{
                                                             backgroundColor: techStackItem.backgroundColor, 
@@ -105,8 +105,8 @@ const About = () => {
                                         {/* Embla Carousel 2 */}
                                         <div className="embla__viewport pt-[20px]" ref={emblaRef2}>
                                             <div className="embla__container">
-                                                {techStack && techStack.map(techStackItem => (
-                                                    <div className="embla__slide pl-[10px]">
+                                                {techStack && techStack.map((techStackItem, index) => (
+                                                    <div className="embla__slide pl-[10px]" key={index}>
                                                         <div className="slide-content__wrapper flex flex-row items-center gap-3 bg-(--color-tertiary-bg) rounded-[30px] p-[10px] border-[1px] border-(--border-color-light)">
                                                             <div className={`tech-acrony flex justify-center items-center rounded-[100%]`} style={{
                                                             backgroundColor: techStackItem.backgroundColor, 
