@@ -21,22 +21,16 @@ const Statistic = () => {
         setyearOfExperience(yearOfExperience => counterIncrement(yearOfExperience, 6));
 
       }, 80)
-    } else {
-      clearInterval(intervalRef.current);
-      setSuccessProject(0);
-      setSatisfiedClient(0);
-      setyearOfExperience(0);
-    }
-    
+    }     
   }
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting) {
-          elementVisible(true)
-        } else {
-          elementVisible(false);
+          elementVisible(true);
+
+          observer.unobserve(targetRef.current);
         }
       })
     }, {
