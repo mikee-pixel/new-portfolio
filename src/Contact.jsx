@@ -8,7 +8,7 @@ const Contact = () => {
     const [fieldName, setFieldName] = useState("");
     const [fieldPhone, setFieldPhone] = useState("");
     const [fieldEmail, setFieldEmail] = useState("");
-    const [fieldSubject, setFieldSubject] = useState("");
+    const [fieldServiceType, setFieldServiceType] = useState("");
     const [fieldMessage, setFieldMessage] = useState("");
     const [successMessage, setSuccessMessage] = useState(false);
     const [errorMessage, setErrorMessage] = useState(false);
@@ -45,7 +45,7 @@ const Contact = () => {
             setFieldName("");
             setFieldPhone("");
             setFieldEmail("");
-            setFieldSubject("");
+            setFieldServiceType("");
             setFieldMessage("");
             setSuccessMessage(true);
 
@@ -74,7 +74,13 @@ const Contact = () => {
                                 <input onChange={e => setFieldName(e.target.value)} value={fieldName} type="text" name="your-name" id="your-name" placeholder="Your Name *" required className="inputfield-item w-[100%] lg:w-[47%] bg-(--color-bg) border-[1px] border-(--border-color-light)"/>
                                 <input onChange={e => setFieldPhone(e.target.value)} value={fieldPhone} type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" className="inputfield-item w-[100%] lg:w-[47%] bg-(--color-bg) border-[1px] border-(--border-color-light)"/>
                                 <input onChange={e => setFieldEmail(e.target.value)} value={fieldEmail} type="email" name="email-address" id="email-address" placeholder="Your Email *" required className="inputfield-item w-[100%] lg:w-[47%] bg-(--color-bg) border-[1px] border-(--border-color-light)"/>
-                                <input onChange={e => setFieldSubject(e.target.value)} value={fieldSubject} type="text" name="subject" id="subject" placeholder="Subject *" required className="inputfield-item w-[100%] lg:w-[47%] bg-(--color-bg) border-[1px] border-(--border-color-light)"/>
+                                <select onChange={e => setFieldServiceType(e.target.value)} value={fieldServiceType} name="service-type" id="service-type" required className="inputfield-item w-[100%] lg:w-[47%] bg-(--color-bg) border-[1px] border-(--border-color-light)">
+                                    <option value="" disabled hidden>How can we help you? *</option>
+                                    <option value="Graphics Design">Graphics Design</option>
+                                    <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                    <option value="Website Development">Website Development</option>
+                                    <option value="E-Commerce">E-Commerce</option>
+                                </select>
                                 <textarea onChange={e => setFieldMessage(e.target.value)} value={fieldMessage} name="message" id="message" className="inputfield-item w-[100%] bg-(--color-bg) border-[1px] border-(--border-color-light)" placeholder="Your Message *" required></textarea>
                                 <button type="submit" disabled={loading} className="disabled:opacity-60 disabled:cursor-not-allowed">Appointment Now</button>
                                 <p className={`loading ${loading ? 'active' : ''}`}>Loading....</p>
