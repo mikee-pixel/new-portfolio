@@ -12,24 +12,28 @@ import Contact from './Contact.jsx'
 import ContactDetails from './ContactDetails.jsx'
 import Footer from './Footer.jsx'
 import Navigation from './Navigation.jsx'
+import ErrorFallback from './components/ErrorFallback.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ErrorBoundary } from "react-error-boundary";
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <ScrollToView />
-      <Navigation />
-      <App />
-      <Statistic />
-      <About />
-      <SkillSet />
-      <Resume />
-      <Portfolio />
-      <Contact />
-      <ContactDetails />
-      <Footer />
-    </BrowserRouter>
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <BrowserRouter>
+        <ScrollToView />
+        <Navigation />
+        <App />
+        <Statistic />
+        <About />
+        <SkillSet />
+        <Resume />
+        <Portfolio />
+        <Contact />
+        <ContactDetails />
+        <Footer />
+      </BrowserRouter>
+    </ErrorBoundary>
   </StrictMode>,
 
 )

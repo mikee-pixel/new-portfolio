@@ -785,6 +785,7 @@ section {
   border-radius: 10px;
   background: radial-gradient(circle, #2eaf9d 0%, #4af8e4 100%);
   box-shadow: var(--backshadow);
+  transition: width 1s ease-out;
 }
 
 /*RESUME SECTION*/

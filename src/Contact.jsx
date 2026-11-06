@@ -1,6 +1,6 @@
 import useAnimation from "./useAnimation";
 import emailjs  from "emailjs-com";
-import {useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 
 const Contact = () => {
     const {targetElement, isElementVisible} = useAnimation();
@@ -10,16 +10,24 @@ const Contact = () => {
     const [fieldEmail, setFieldEmail] = useState("");
     const [fieldSubject, setFieldSubject] = useState("");
     const [fieldMessage, setFieldMessage] = useState("");
-    const [successMessage, setSucessMessage] = useState(null);
+    const [successMessage, setSuccessMessage] = useState(false);
     const [errorMessage, setErrorMessage] = useState(false);
     const [loading, setLoading] = useState(false);
- 
+    const successTimeout = useRef(null);
+
+    //Clear the success message timer when the component unmount
+    useEffect(() => {
+        return () => clearTimeout(successTimeout.current);
+    }, []);
 
     const handleFormSubmission = async(e) => {
         e.preventDefault();
 
-        //Check if there is existing error message in the form and set it to false
-        if(errorMessage) setErrorMessage(false);
+        //Clear the messages from any previous submission
+        clearTimeout(successTimeout.current);
+        setErrorMessage(false);
+        setSuccessMessage(false);
+        setLoading(true);
 
         try{
             //Request to EmailJS
@@ -33,30 +41,21 @@ const Contact = () => {
                 throw new Error(`HTTP Error: Status ${response.status}`);
             }
 
-            setLoading(true);
+            //Empty the fields and display the success message
+            setFieldName("");
+            setFieldPhone("");
+            setFieldEmail("");
+            setFieldSubject("");
+            setFieldMessage("");
+            setSuccessMessage(true);
 
-            //Update state values
-            setTimeout(() => {
-                //Empty the fields and display the success message
-                setFieldName(""),
-                setFieldPhone(""),
-                setFieldEmail(""),
-                setFieldSubject(""),
-                setFieldMessage(""),
-                setLoading(false),
-                setErrorMessage(false),
-                setSucessMessage(true)
-
-                //Hide the sucesss message after 2 sec
-                setTimeout(() => {
-                    setSucessMessage(false);
-                    console.log("Sucess Message Disappear")
-                }, 2000)
-            }, 2000)
-        } catch (error) {() => {
+            //Hide the success message after 2 sec
+            successTimeout.current = setTimeout(() => setSuccessMessage(false), 2000);
+        } catch (error) {
             console.log(error);
             setErrorMessage(true);
-        }
+        } finally {
+            setLoading(false);
         }
     }
         
@@ -77,7 +76,7 @@ const Contact = () => {
                                 <input onChange={e => setFieldEmail(e.target.value)} value={fieldEmail} type="email" name="email-address" id="email-address" placeholder="Your Email *" required className="inputfield-item w-[100%] lg:w-[47%] bg-(--color-bg) border-[1px] border-(--border-color-light)"/>
                                 <input onChange={e => setFieldSubject(e.target.value)} value={fieldSubject} type="text" name="subject" id="subject" placeholder="Subject *" required className="inputfield-item w-[100%] lg:w-[47%] bg-(--color-bg) border-[1px] border-(--border-color-light)"/>
                                 <textarea onChange={e => setFieldMessage(e.target.value)} value={fieldMessage} name="message" id="message" className="inputfield-item w-[100%] bg-(--color-bg) border-[1px] border-(--border-color-light)" placeholder="Your Message *" required></textarea>
-                                <button type="submit">Appointment Now</button>
+                                <button type="submit" disabled={loading} className="disabled:opacity-60 disabled:cursor-not-allowed">Appointment Now</button>
                                 <p className={`loading ${loading ? 'active' : ''}`}>Loading....</p>
                                 <p className={`error-message ${errorMessage ? 'active' : ''}`}>Submission Failed.</p>
                                 <p className={`success-message ${successMessage ? 'active' : ''}`}>Submission Success!</p>

@@ -23,9 +23,9 @@ function App() {
               <p className="tagline">I Build Websites That Don’t Just Look Good. They Work Smart.</p>
               <a href="#contact-me" className="primary-btn icon-slide-animation">Get In Touch <span className="btn-icon"><FontAwesomeIcon icon={faArrowRight}/></span></a>
               <div className="social-medias-container">
-                <a href="tel:+639926414357" className="social-media-icon"><FontAwesomeIcon icon={faWhatsapp} /> </a>
+                <a href="https://wa.me/639926414357" target="_blank" rel="noopener noreferrer" className="social-media-icon"><FontAwesomeIcon icon={faWhatsapp} /> </a>
                 <a href="https://www.linkedin.com/in/michael-jhon-navidad-03307a206/" target="_blank" className="social-media-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
-                <a href="tel:+639926414357" className="social-media-icon"><FontAwesomeIcon icon={faTelegram}/></a>
+                <a href="https://t.me/+639926414357" target="_blank" rel="noopener noreferrer" className="social-media-icon"><FontAwesomeIcon icon={faTelegram}/></a>
               </div>
               
             </div>

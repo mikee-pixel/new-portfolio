@@ -1,68 +1,13 @@
-import { useState, useRef, useEffect } from "react";
 import useAnimation from "./useAnimation";
+import SkillData from "./data/SkillData";
 
 const SkillSet = () => {
-    const [skillHtml, setSkillHtml] = useState(0);
-    const [skillCss, setSkillCss] = useState(0);
-    const [skillJavaScript, setSkillJavaScript] = useState(0);
-    const [skillWordPress, setSkillWordPress] = useState(0);
-    const [skillPhp, setSkillPhp] = useState(0);
-    const [skillSql, setSkillSql] = useState(0);
-    const [skillReactJs, setSkillReactJs] = useState(0);
-    const [skillTailwindCss, setSkillTailwindCss] = useState(0);
-
-    const progressInterval = useRef(null);
-    const skillTarget = useRef(null);
-
-    const skillProgression = (isElementVisible) => {
-        if(isElementVisible) {
-            progressInterval.current = setInterval(() => {
-
-                //helper function interval
-                const counter = (initialValue, maxValue) => {
-                    if(initialValue < maxValue) return initialValue + 1;
-                    return initialValue;
-                }
-
-                setSkillHtml(skillHtml => counter(skillHtml, 80));
-                setSkillCss(skillCss => counter (skillCss, 90));
-                setSkillJavaScript(skillJavaScript => counter(skillJavaScript, 60));
-                setSkillWordPress(skillWordPress => counter(skillWordPress, 80));
-                setSkillPhp(skillPhp => counter(skillPhp, 60));
-                setSkillSql(skillSql => counter(skillSql, 40));
-                setSkillReactJs(skillReactJs => counter(skillReactJs, 60));
-                setSkillTailwindCss(skillTailwindCss => counter(skillTailwindCss, 60));
-                
-            }, 10);
-        } else {
-            clearInterval(progressInterval.current);
-        }
-    }
-
-    useEffect(() => {
-        const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry =>{
-                if(entry.isIntersecting) {
-                    skillProgression(true);
-                } else {
-                    skillProgression(false);
-                }
-            })
-        }, {
-            threshold: 0.5,
-        })
-
-        if(skillTarget.current) skillObserver.observe(skillTarget.current);
-
-        return () => {
-            if(skillTarget.current) skillObserver.unobserve(skillTarget.current);
-            setTimeout(progressInterval.current);
-            skillObserver.disconnect();
-        }
-
-    }, [])
-
     const {targetElement, isElementVisible} = useAnimation();
+    const {targetElement: skillsRef, isElementVisible: skillsVisible} = useAnimation();
+
+    //Skill Data
+    const skills = Object.values(SkillData);
+
     return (
         <section className="w-full flex justify-center skillset bg-(--color-secondary-bg)" id="skillset" ref={targetElement}>
             <div className="inner-con max-w-[1320px] w-full px-10">
@@ -73,96 +18,20 @@ const SkillSet = () => {
                         <hr className="separator-item w-10 border-[3px] highlight" />
                         <hr className="separator-item w-8" />
                     </div>
-                    <div className="skills-container w-full flex flex-row flex-wrap justify-between items-start gap-5 mt-8" ref={skillTarget}>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">react js</div>
-                                <div className="skill-percentage">60%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillHtml}%`}}></div>
+                    <div className="skills-container w-full flex flex-row flex-wrap justify-between items-start gap-5 mt-8" ref={skillsRef}>
+                        {skills.map((skill) => (
+                            <div className="skill-item w-full md:w-[45%]" key={skill.id}>
+                                <div className="details w-full flex flex-row items-center justify-between mb-2">
+                                    <div className="skill-name">{skill.name}</div>
+                                    <div className="skill-percentage">{skill.level}%</div>
+                                </div>
+                                <div className="skill-level">
+                                    <div className="skill-bar">
+                                        <div className="skill-overlaybar" style={{width: skillsVisible ? `${skill.level}%` : 0}}></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">express js</div>
-                                <div className="skill-percentage">40%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillPhp}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">tailwind css</div>
-                                <div className="skill-percentage">60%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillCss}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">javascript</div>
-                                <div className="skill-percentage">60%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillSql}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">php</div>
-                                <div className="skill-percentage">60%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillJavaScript}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">html 5</div>
-                                <div className="skill-percentage">80%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillReactJs}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">css</div>
-                                <div className="skill-percentage">90%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillWordPress}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skill-item w-full md:w-[45%]">
-                            <div className="details w-full flex flex-row items-center justify-between mb-2">
-                                <div className="skill-name">wordpress</div>
-                                <div className="skill-percentage">80%</div>
-                            </div>
-                            <div className="skill-level">
-                                <div className="skill-bar">
-                                    <div className="skill-overlaybar" style={{width: `${skillTailwindCss}%`}}></div>
-                                </div>
-                            </div>
-                        </div>
-                        
+                        ))}
                     </div>
                 </div>
             </div>

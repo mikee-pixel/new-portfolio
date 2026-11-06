@@ -32,7 +32,7 @@ const ContactDetails = () => {
                 </div>
                 <div className="blurb-detail-container w-[80%] flex flex-col justify-items-start">
                     <h4 className="blurb-title pb-1">Email:</h4>
-                    <p className="blurb-text">michealnavidad36@gmail.com</p>
+                    <p className="blurb-text">michaelnavidad36@gmail.com</p>
                 </div>
               </a>
             </div> 

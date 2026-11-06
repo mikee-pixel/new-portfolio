@@ -9,9 +9,9 @@ const Footer = () => {
             <h2 className='text-center'>Michael Jhon Navidad</h2>
             <p className="text-center"><em>"I Build Websites That Don’t Just Look Good. They Work Smart."</em></p>
             <div className="social-medias-container">
-                <a href="tel:+639926414357" className="social-media-icon"><FontAwesomeIcon icon={faWhatsapp} /> </a>
+                <a href="https://wa.me/639926414357" target="_blank" rel="noopener noreferrer" className="social-media-icon"><FontAwesomeIcon icon={faWhatsapp} /> </a>
                 <a href="https://www.linkedin.com/in/michael-jhon-navidad-03307a206/" target="_blank" className="social-media-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
-                <a href="tel:+639926414357" className="social-media-icon"><FontAwesomeIcon icon={faTelegram} /></a>
+                <a href="https://t.me/+639926414357" target="_blank" rel="noopener noreferrer" className="social-media-icon"><FontAwesomeIcon icon={faTelegram} /></a>
             </div>
         </div>
       </div>

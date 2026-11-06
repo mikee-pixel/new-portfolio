@@ -273,10 +273,6 @@ const PortfolioData = {
         src: "/new-portfolio/assets/portfolio/launchpoint/image3.jpg",
         alt: "",
       },
-      {
-        src: "/new-portfolio/assets/portfolio/launchpoint/image4.jpg",
-        alt: "",
-      },
     ],
   },
   sbt: {
@@ -330,7 +326,7 @@ const PortfolioData = {
     id: 12,
     company: "Upstream Teches",
     websiteName: "LightSpeed Maritime Communications Corporation",
-    url: "https://incantus-tech.com/",
+    url: "https://lightspeed-maritime.com/",
     description: [
       "Developed a responsive digital platform tailored to elevate industrial brand positioning and attract organic business inquiries.",
     ],
@@ -413,16 +409,6 @@ const PortfolioData = {
     ],
   },
 
-
-
-
-
-
-
-
-
-
-
   nederWijen: {
     id: 10,
     company: "Hilux",
@@ -432,7 +418,7 @@ const PortfolioData = {
       "Crafted an elegant B2B website for a Dutch wine wholesaler, presenting a curated premium wine selection to hospitality and corporate buyers.",
     ],
     techStack: ["woocommerce", "html", "css", "javascript", "php", "wordpress", "elementor"],
-    filterCategory: ["filter-web", "filter-all"],
+    filterCategory: ["filter-web", "filter-ecommerce", "filter-all"],
     projectYear: "Oct 2025",
     projectTag: "Website Development",
     featuredImages: [
@@ -460,16 +446,10 @@ const PortfolioData = {
         src: "/new-portfolio/assets/portfolio/neder-wijnen/image5.jpg",
         alt: "",
       },
-      ,
       {
         src: "/new-portfolio/assets/portfolio/neder-wijnen/image6.jpg",
         alt: "",
-      }
-      ,
-      {
-        src: "/new-portfolio/assets/portfolio/neder-wijnen/image7.jpg",
-        alt: "",
-      }
+      },
     ],
   },
   tripleK: {
@@ -544,10 +524,6 @@ const PortfolioData = {
         src: "/new-portfolio/assets/portfolio/bh-weaver-electric/image4.jpg",
         alt: "",
       },
-      {
-        src: "/new-portfolio/assets/portfolio/bh-weaver-electric/image5.jpg",
-        alt: "",
-      }
     ],
   },
   demoBank: {
@@ -703,7 +679,7 @@ const PortfolioData = {
       "Created a vibrant, product-focused brand site for KOSÉ’s Japanese sunscreen line, showcasing gels, sprays and essences built for lasting UV protection.",
     ],
     techStack: ["html", "css", "javascript", "php", "wordpress", "elementor"],
-    filterCategory: ["filter-web", "filter-all"],
+    filterCategory: ["filter-web", "filter-ecommerce", "filter-all"],
     projectYear: "Aug 2025",
     projectTag: "Website Development",
     featuredImages: [
@@ -738,7 +714,7 @@ const PortfolioData = {
       "Shaped a luxurious, visually rich website for the iconic “Innocent & Sexy” cosmetics brand, reflecting its jewelry-inspired packaging and kawaii charm.",
     ],
     techStack: ["html", "css", "javascript", "php", "wordpress", "elementor"],
-    filterCategory: ["filter-web", "filter-all"],
+    filterCategory: ["filter-web", "filter-ecommerce", "filter-all"],
     projectYear: "Aug 2025",
     projectTag: "Website Development",
     featuredImages: [
