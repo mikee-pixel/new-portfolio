@@ -39,6 +39,11 @@ const SkillData = {
         name: "wordpress",
         level: 80,
     },
+    git: {
+        id: 9,
+        name: "git & github",
+        level: 70,
+    }
 };
 
 export default SkillData;

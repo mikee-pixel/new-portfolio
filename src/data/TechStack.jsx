@@ -12,7 +12,6 @@ const TechStack = {
         textColor: "#FFFFFF",
     },
 
-
     javascript: {
         techAcronym: "JS",
         title: "JavaScript",
@@ -49,6 +48,12 @@ const TechStack = {
         backgroundColor: "#777BB4",
         textColor: "#FFFFFF",
     },
+    git: {
+        techAcronym: 'Git',
+        title: "Git & GitHub",
+        backgroundColor: "#F1502F",
+        textColor: "#FFFFFF"
+    }
 }
 
 export default TechStack;
