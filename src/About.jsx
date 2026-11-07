@@ -57,7 +57,7 @@ const About = () => {
                         <p className="base-location__container flex flex-row items-center gap-2 text-(--text-muted)">
                             <span className="icon-location"><MapPin className="stroke-(--color-accent) w-[20px] h-[20px]"/></span> Based in the Philippines · Working with clients worldwide
                         </p>
-                        <p className="about-details text-(--text-body)">For six years, I've crafted interactive and dynamic websites, taking projects from concept to completion. I specialize in designing and developing user-friendly, responsive websites, leveraging the latest technologies and best practices. My expertise includes building E-commerce and corporate websites, website speed optimization, API integration, and building custom hooks and functions.</p>
+                        <p className="about-details text-(--text-body)">For seven years, I've crafted interactive and dynamic websites, taking projects from concept to completion. I specialize in designing and developing user-friendly, responsive websites, leveraging the latest technologies and best practices. My expertise includes building E-commerce and corporate websites, website speed optimization, API integration, and building custom hooks and functions.</p>
                         <div className="expertise-container flex flex-col gap-5">
                             <h4 className="text-(--color-white)">My Expertise</h4>
                             <div className="blurb-icon-grid__container grid grid-cols-1 sm:grid-cols-2 gap-5">
