@@ -13,13 +13,13 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
+    "@emailjs/browser": "^5.0.3",
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-regular-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.0",
     "@tailwindcss/vite": "^4.1.15",
-    "emailjs-com": "^3.2.0",
     "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",

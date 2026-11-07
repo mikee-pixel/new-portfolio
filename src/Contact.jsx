@@ -1,5 +1,5 @@
 import useAnimation from "./useAnimation";
-import emailjs  from "emailjs-com";
+import { sendContactForm } from "./services/emailService";
 import {useEffect, useRef, useState} from 'react';
 
 const Contact = () => {
@@ -31,12 +31,8 @@ const Contact = () => {
 
         try{
             //Request to EmailJS
-            const response = await emailjs.sendForm(
-                "service_kurufeb",
-                "template_m9j6vp9",
-                contactForm.current,
-                "eegWjDT5Z9ZRBRqqg"
-            )
+            const response = await sendContactForm(contactForm.current);
+
             if(response.status !== 200) {
                 throw new Error(`HTTP Error: Status ${response.status}`);
             }
